@@ -2,7 +2,7 @@ module.exports = {
     "branches": [
         "main"
     ],
-    repositoryUrl: "https://github.com/Actunime/package-template",
+    repositoryUrl: "https://github.com/Actunime/types",
     plugins: [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
