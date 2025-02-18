@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Actunime/types/compare/v1.0.0...v1.0.1) (2025-02-18)
+
+
+### Bug Fixes
+
+* package add export ([087c92f](https://github.com/Actunime/types/commit/087c92f309004a93e53e2a335a0e87c6455b91ae))
+
 # 1.0.0 (2025-02-18)
 
 
