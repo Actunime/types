@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Actunime/types/compare/v1.0.2...v1.0.3) (2025-02-19)
+
+
+### Bug Fixes
+
+* utilisation de pnpm ([cab110e](https://github.com/Actunime/types/commit/cab110e58c65cd204de057e66a5b05a18b0aa46d))
+
 ## [1.0.2](https://github.com/Actunime/types/compare/v1.0.1...v1.0.2) (2025-02-18)
 
 
