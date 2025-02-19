@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/Actunime/types/compare/v1.0.5...v1.0.6) (2025-02-19)
+
+
+### Bug Fixes
+
+* adding target to image ([804abd6](https://github.com/Actunime/types/commit/804abd6391e1d98629b5683342b5bab06f8e2577))
+
 ## [1.0.5](https://github.com/Actunime/types/compare/v1.0.4...v1.0.5) (2025-02-19)
 
 
