@@ -6,8 +6,8 @@ export interface IAccount {
     user: Schema.Types.ObjectId;
     userId: string;
     email: string;
+    password: string;
     verified: Date;
-
     createdAt: Date;
     updatedAt: Date;
     deletedAt: Date;
