@@ -8,6 +8,7 @@ export interface IImage {
   label: IImageLabel
   url: string; // Virtual
   location: string; // Virtual;
+  target: { id: string }
   targetPath: string;
   isVerified: boolean;
   createdAt?: Date;
