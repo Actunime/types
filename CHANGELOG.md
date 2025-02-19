@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/Actunime/types/compare/v1.0.4...v1.0.5) (2025-02-19)
+
+
+### Bug Fixes
+
+* adding "password" ([38a4a93](https://github.com/Actunime/types/commit/38a4a93cda569c829f34d16ddf2145fb1fcac934))
+
 ## [1.0.4](https://github.com/Actunime/types/compare/v1.0.3...v1.0.4) (2025-02-19)
 
 
