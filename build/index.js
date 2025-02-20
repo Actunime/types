@@ -25,7 +25,7 @@ __exportStar(require("./_characterType"), exports);
 __exportStar(require("./_companyType"), exports);
 __exportStar(require("./_defaultSite"), exports);
 __exportStar(require("./_emailCodeType"), exports);
-__exportStar(require("./_emailRegisterCodeType"), exports);
+__exportStar(require("./_preRegister"), exports);
 __exportStar(require("./_groupeType"), exports);
 __exportStar(require("./_imageType"), exports);
 __exportStar(require("./_mangaType"), exports);

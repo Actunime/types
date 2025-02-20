@@ -2,7 +2,7 @@
 
 
 
-export interface IEmailRegisterCode {
+export interface IPreRegister {
     code: string;
     email: string;
     data: any;

@@ -9,7 +9,7 @@ export * from './_characterType';
 export * from './_companyType';
 export * from './_defaultSite';
 export * from './_emailCodeType';
-export * from './_emailRegisterCodeType';
+export * from './_preRegister';
 export * from './_groupeType';
 export * from './_imageType';
 export * from './_mangaType';
