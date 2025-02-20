@@ -5,7 +5,7 @@
 export interface IEmailCode {
     code: string;
     email: string;
-    userId: string;
+    accountId: string;
     device: string;
     createdAt: Date;
 }
