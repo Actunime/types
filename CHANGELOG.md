@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/Actunime/types/compare/v1.0.12...v1.0.13) (2025-02-20)
+
+
+### Bug Fixes
+
+* add refreshToken ([e6bf771](https://github.com/Actunime/types/commit/e6bf771e9052b638d9d38fe459bfac84f18f8e1a))
+
 ## [1.0.12](https://github.com/Actunime/types/compare/v1.0.11...v1.0.12) (2025-02-20)
 
 
