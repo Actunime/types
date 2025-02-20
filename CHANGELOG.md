@@ -1,3 +1,11 @@
+## [1.0.7](https://github.com/Actunime/types/compare/v1.0.6...v1.0.7) (2025-02-20)
+
+
+### Bug Fixes
+
+* add preRegister types ([838d00f](https://github.com/Actunime/types/commit/838d00f6c0c4a7f7020ed010fd5952277250271b))
+* add trigger other packages self-update on update ([c3aacbb](https://github.com/Actunime/types/commit/c3aacbbb62a313d539ab7f3852ee3f2d8f610404))
+
 ## [1.0.6](https://github.com/Actunime/types/compare/v1.0.5...v1.0.6) (2025-02-19)
 
 
