@@ -70,3 +70,6 @@ jobs:
             https://api.github.com/repos/$repo/actions/workflows/packages-update.yml/dispatches \
             -d '{"ref":"main",  "inputs": {"packageName": "@actunime/types"}}'
           done
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
