@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/Actunime/types/compare/v1.0.9...v1.0.10) (2025-02-20)
+
+
+### Bug Fixes
+
+* add trigger other packages self-update on update ([a3fa45c](https://github.com/Actunime/types/commit/a3fa45c05ee54fcbdcb1f978873e0ba1e23433ed))
+
 ## [1.0.9](https://github.com/Actunime/types/compare/v1.0.8...v1.0.9) (2025-02-20)
 
 
