@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/Actunime/types/compare/v1.0.14...v1.0.15) (2025-02-22)
+
+
+### Bug Fixes
+
+* **readme:** add readme ([ad3cac4](https://github.com/Actunime/types/commit/ad3cac46d8d59d77ff738a49639dafdbedf897af))
+
 ## [1.0.14](https://github.com/Actunime/types/compare/v1.0.13...v1.0.14) (2025-02-20)
 
 
