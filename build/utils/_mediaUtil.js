@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.dateToZod = exports.dateTimeToZod = exports.MediaGenresSelection = exports.MediaGenresArray = exports.MediaGenresObj = exports.MediaParentLabelSelection = exports.MediaParentLabelArray = exports.MediaParentLabelObj = exports.MediaStatusSelection = exports.MediaStatusArray = exports.MediaStatusObj = exports.MediaFormatSelection = exports.MediaFormatArray = exports.MediaFormatObj = exports.MediaSourceSelection = exports.MediaSourceArray = exports.MediaSourceObj = void 0;
+exports.dateToZod = exports.dateTimeToZod = exports.MediaGenresSelection = exports.MediaGenresArray = exports.MediaGenresObj = exports.MediaParentLabelSelection = exports.MediaParentLabelArray = exports.MediaParentLabelObj = exports.MediaStatusSelection = exports.MediaStatusArray = exports.MediaStatusObj = exports.MediaSourceSelection = exports.MediaSourceArray = exports.MediaSourceObj = void 0;
 exports.MediaSourceObj = {
     ORIGINAL: {
         label: "Original",
@@ -49,38 +49,42 @@ exports.MediaSourceSelection = exports.MediaSourceArray.map((key) => ({
     description: exports.MediaSourceObj[key].description,
     value: key,
 }));
-exports.MediaFormatObj = {
-    SERIE: {
-        label: "Série",
-        description: "Diffusé en épisodes réguliers.",
-    },
-    FILM: {
-        label: "Film",
-        description: "Produit comme un long métrage.",
-    },
-    ONA: {
-        label: "ONA",
-        description: "Diffusé directement sur Internet.",
-    },
-    OVA: {
-        label: "OVA",
-        description: "Destiné à la vente directe aux consommateurs.",
-    },
-    SPECIAL: {
-        label: "Spécial",
-        description: "Un épisode unique ou une série d'épisodes qui ne fait pas partie de la diffusion régulière d'une série.",
-    },
-    TV_SHORT: {
-        label: "TV Short",
-        description: "Diffusé en épisodes courts, généralement moins de 15 minutes chacun.",
-    },
-};
-exports.MediaFormatArray = Object.keys(exports.MediaFormatObj);
-exports.MediaFormatSelection = exports.MediaFormatArray.map((key) => ({
-    label: exports.MediaFormatObj[key].label,
-    description: exports.MediaFormatObj[key].description,
-    value: key,
-}));
+// export const MediaFormatObj = {
+//   SERIE: {
+//     label: "Série",
+//     description: "Diffusé en épisodes réguliers.",
+//   },
+//   FILM: {
+//     label: "Film",
+//     description: "Produit comme un long métrage.",
+//   },
+//   ONA: {
+//     label: "ONA",
+//     description: "Diffusé directement sur Internet.",
+//   },
+//   OVA: {
+//     label: "OVA",
+//     description: "Destiné à la vente directe aux consommateurs.",
+//   },
+//   SPECIAL: {
+//     label: "Spécial",
+//     description:
+//       "Un épisode unique ou une série d'épisodes qui ne fait pas partie de la diffusion régulière d'une série.",
+//   },
+//   TV_SHORT: {
+//     label: "TV Short",
+//     description:
+//       "Diffusé en épisodes courts, généralement moins de 15 minutes chacun.",
+//   },
+// };
+// export type IMediaFormat = keyof typeof MediaFormatObj;
+// export const MediaFormatArray = Object.keys(MediaFormatObj) as IMediaFormat[] &
+// [string, ...string[]];
+// export const MediaFormatSelection = MediaFormatArray.map((key) => ({
+//   label: MediaFormatObj[key].label,
+//   description: MediaFormatObj[key].description,
+//   value: key,
+// }));
 exports.MediaStatusObj = {
     AIRING: {
         label: "En cours",

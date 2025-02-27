@@ -39,7 +39,7 @@ import { ICharacterRole, IPersonRole } from "./utils";
 
 export interface IAnimeEpisode {
   airing?: number;
-  nextAiringDate?: Date;
+  nextAiringDate?: string;
   total?: number;
   durationMinute?: number;
 }
@@ -56,11 +56,13 @@ export interface IAnimeRoot extends IMediaBase {
     data?: IAnime; // Virtual
   };
 
-  source: {
-    id?: string;
-    sourceLabel?: IMediaSource;
-    data?: IManga; // Virtual
+
+  manga: {
+    id: string;
+    data?: IManga;
   };
+
+  source: IMediaSource;
 
   title: IMediaTitle;
   synopsis?: string;

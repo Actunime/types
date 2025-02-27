@@ -16,8 +16,8 @@ export interface IMediaTitle {
 }
 
 export interface IMediaDate {
-  start?: Date;
-  end?: Date;
+  start?: string;
+  end?: string;
 }
 
 export interface IMediaImage {
@@ -34,19 +34,19 @@ export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
 
 export interface IMediaRelation<T> {
   id: string;
-  data: T;
+  data?: T;
 }
 
 export interface IMediaCharacterRelation<T> {
   id: string;
   role?: ICharacterRole;
-  data: T;
+  data?: T;
 }
 
 export interface IMediaPersonRelation<T> {
   id: string;
   role?: IPersonRole;
-  data: T;
+  data?: T;
 }
 
 export interface IMediaRelationInput<T> {
@@ -56,7 +56,7 @@ export interface IMediaRelationInput<T> {
 
 export interface IMediaRelationNeutre<T> {
   id: string;
-  data: T;
+  data?: T;
 }
 
 export interface IMediaRelationNeutreInput<T> {

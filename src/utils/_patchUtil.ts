@@ -1,11 +1,8 @@
 export const PatchTypeObj = {
   CREATE: "Création",
-  CREATE_REQUEST: "Demande de création",
-  PATCH: "Modification",
-  UPDATE_REQUEST: "Demande de modification",
-  DELETE: "Suppression",
-  DELETE_FORCE: "Suppression forçé",
-  DELETE_RESTORE: "Restauration",
+  UPDATE: "Modification",
+  MODERATOR_CREATE: "Création par modération",
+  MODERATOR_UPDATE: "Modification par modération"
 };
 
 export type IPatchType = keyof typeof PatchTypeObj;
@@ -18,10 +15,9 @@ export const PatchTypeSelection = PatchTypeArray.map((key) => ({
 
 export const PatchStatusObj = {
   PENDING: "En attente",
-  IN_PROGRESS: "En cours",
+  PROGRESS: "En cours de vérification",
   ACCEPTED: "Accepté",
-  REJECTED: "Refusé",
-  REVERTED: "Annulé",
+  DENIED: "Refusé"
 };
 
 export type IPatchStatus = keyof typeof PatchStatusObj;
@@ -30,24 +26,5 @@ export const PatchStatusArray = Object.keys(PatchStatusObj) as IPatchStatus[] &
 
 export const PatchStatusSelection = PatchStatusArray.map((key) => ({
   label: PatchStatusObj[key],
-  value: key,
-}));
-
-export const PatchActionObj = {
-  IN_PROGRESS: "En cours",
-  REQUEST: "Demande",
-  CHANGE: "Modification des modifications",
-  ACCEPT: "Accepter",
-  REJECT: "Refuser",
-  REVERT: "Annuler",
-  DIRECT_CREATE: "Creation sans détours",
-  DIRECT_PATCH: "Mise a jour sans détours",
-};
-
-export type IPatchAction = keyof typeof PatchActionObj;
-export const PatchActionArray = Object.keys(PatchActionObj) as IPatchAction[] &
-[string, ...string[]];
-export const PatchActionSelection = PatchActionArray.map((key) => ({
-  label: PatchActionObj[key],
   value: key,
 }));

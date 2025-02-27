@@ -7,7 +7,7 @@ import { ITrackType } from "./utils";
 
 export interface ITrack extends IMediaBase {
   type: ITrackType; // ITrackType;
-  name: { default: string; alias: { content: string }[] };
+  name: { default: string; alias?: { content: string }[] };
   pubDate: Date | string;
   bio?: string;
   cover?: {

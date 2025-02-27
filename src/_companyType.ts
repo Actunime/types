@@ -7,11 +7,8 @@ export interface ICompany extends IMediaBase {
   name: string;
   bio?: string;
   links?: IMediaLink[];
-  logo?: {
-    id: string;
-    data?: IImage; // Virtual
-  };
-  createdDate?: Date | string;
+  logo?: { id: string; };
+  createdDate?: string;
 }
 
 export type ICompanyPaginationResponse = IPaginationResponse<ICompany>;

@@ -11,7 +11,7 @@ import { IMediaGenres, IMediaParentLabel, IMediaSource, IMediaStatus } from "./u
 import { IAnimeFormat } from "./utils/_animeUtil";
 export interface IAnimeEpisode {
     airing?: number;
-    nextAiringDate?: Date;
+    nextAiringDate?: string;
     total?: number;
     durationMinute?: number;
 }
@@ -25,11 +25,11 @@ export interface IAnimeRoot extends IMediaBase {
         parentLabel?: IMediaParentLabel;
         data?: IAnime;
     };
-    source: {
-        id?: string;
-        sourceLabel?: IMediaSource;
+    manga: {
+        id: string;
         data?: IManga;
     };
+    source: IMediaSource;
     title: IMediaTitle;
     synopsis?: string;
     date?: IMediaDate;

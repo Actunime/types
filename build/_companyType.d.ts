@@ -1,4 +1,3 @@
-import { IImage } from "./_imageType";
 import type { IMediaBase, IMediaLink } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 export interface ICompany extends IMediaBase {
@@ -8,9 +7,8 @@ export interface ICompany extends IMediaBase {
     links?: IMediaLink[];
     logo?: {
         id: string;
-        data?: IImage;
     };
-    createdDate?: Date | string;
+    createdDate?: string;
 }
 export type ICompanyPaginationResponse = IPaginationResponse<ICompany>;
 //# sourceMappingURL=_companyType.d.ts.map

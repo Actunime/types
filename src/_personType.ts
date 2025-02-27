@@ -5,13 +5,11 @@ import type { IPaginationResponse } from "./_paginationType";
 export interface IPerson extends IMediaBase {
   isGroupe: boolean;
   name: {
-    first: string;
-    last?: string;
-    full: string;
-    alias: { content: string }[];
+    default: string;
+    alias?: { content: string }[];
   };
-  birthDate?: Date;
-  deathDate?: Date;
+  birthDate?: string;
+  deathDate?: string;
   bio?: string;
   avatar?: { id: string; data?: IImage };
   links?: IMediaLink[];

@@ -7,7 +7,7 @@ export interface ITrack extends IMediaBase {
     type: ITrackType;
     name: {
         default: string;
-        alias: {
+        alias?: {
             content: string;
         }[];
     };

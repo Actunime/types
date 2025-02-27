@@ -1,37 +1,32 @@
-import { ITargetPath } from "./utils/_global";
 import { Schema } from "mongoose";
 import { IPaginationResponse } from "./_paginationType";
-import { IUser } from "./_userType";
-import { IPatchStatus, IPatchType } from "./utils/_patchUtil";
-export interface IPatch<T = any> {
+import { IPatchStatus, IPatchType, ITargetPath } from "./utils";
+export interface IPatch<T = any, Type = IPatchType> {
     _id: Schema.Types.ObjectId;
-    id: string;
-    type: IPatchType;
-    note: string;
-    moderatorNote: string;
-    status: IPatchStatus;
-    target?: {
-        id: string;
-        data?: T;
-    };
-    targetPath: ITargetPath;
+    id?: string;
     ref?: {
         id: string;
-        data?: IPatch;
     };
-    newValues?: T;
-    oldValues?: T;
+    type: Type;
+    status: IPatchStatus;
+    target: {
+        id: string;
+    };
+    targetPath: ITargetPath;
+    description?: string;
+    reason?: string;
+    original: T;
+    changes: T;
+    isChangesUpdated: boolean;
     author: {
         id: string;
-        data?: IUser;
     };
-    currentModerator: {
+    moderator?: {
         id: string;
-        at: Date;
-        data?: IUser;
     };
-    createdAt?: Date;
-    updatedAt?: Date;
+    createdAt: Date;
+    updatedAt: Date;
 }
+export type IPatchOptionnal<T = any, Type = IPatchType> = Type extends "CREATE" ? Pick<IPatch<T>, 'id' | 'type' | 'target' | 'targetPath' | 'original' | 'description' | 'author' | 'ref'> : Type extends "UPDATE" ? Pick<IPatch<T>, 'id' | 'type' | 'target' | 'targetPath' | 'original' | 'description' | 'changes' | 'author' | 'ref'> : Type extends "MODERATOR_CREATE" ? Pick<IPatch<T>, 'id' | 'type' | 'status' | 'target' | 'targetPath' | 'original' | 'description' | 'moderator' | 'author' | 'ref'> : Type extends "MODERATOR_UPDATE" ? Pick<IPatch<T>, 'id' | 'type' | 'status' | 'target' | 'targetPath' | 'original' | 'description' | 'changes' | 'moderator' | 'author' | 'ref'> : IPatch<T, Type>;
 export type IPatchPaginationResponse = IPaginationResponse<IPatch>;
 //# sourceMappingURL=_patchType.d.ts.map

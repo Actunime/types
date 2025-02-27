@@ -6,7 +6,7 @@ import type { IPerson } from "./_personType";
 export interface ICharacter extends IMediaBase {
     name: {
         default: string;
-        alias: {
+        alias?: {
             content: string;
         }[];
     };

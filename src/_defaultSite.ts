@@ -1,4 +1,4 @@
-import { MediaFormatSelection, MediaGenresSelection, MediaParentLabelSelection, MediaSourceSelection, MediaStatusSelection } from "./utils";
+import { MediaGenresSelection, MediaParentLabelSelection, MediaSourceSelection, MediaStatusSelection } from "./utils";
 
 
 
@@ -8,6 +8,5 @@ export interface IDefaultSite {
         status: typeof MediaStatusSelection;
         source: typeof MediaSourceSelection;
         parent: typeof MediaParentLabelSelection;
-        format: typeof MediaFormatSelection;
     }
 }

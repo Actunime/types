@@ -5,7 +5,7 @@ import type { IPaginationResponse } from "./_paginationType";
 import type { IPerson } from "./_personType";
 
 export interface ICharacter extends IMediaBase {
-  name: { default: string; alias: { content: string }[] };
+  name: { default: string; alias?: { content: string }[] };
   age: number;
   birthDate: Date | string;
   gender: ICharacterGender;

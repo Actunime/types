@@ -47,39 +47,6 @@ export declare const MediaSourceSelection: {
     description: string;
     value: "MANGA" | "MANHWA" | "MANHUA" | "LIGHT_NOVEL" | "ORIGINAL" | "VISUAL_NOVEL" | "WEB_NOVEL" | "GAME" | "NOVEL" | "ANIME";
 }[];
-export declare const MediaFormatObj: {
-    SERIE: {
-        label: string;
-        description: string;
-    };
-    FILM: {
-        label: string;
-        description: string;
-    };
-    ONA: {
-        label: string;
-        description: string;
-    };
-    OVA: {
-        label: string;
-        description: string;
-    };
-    SPECIAL: {
-        label: string;
-        description: string;
-    };
-    TV_SHORT: {
-        label: string;
-        description: string;
-    };
-};
-export type IMediaFormat = keyof typeof MediaFormatObj;
-export declare const MediaFormatArray: IMediaFormat[] & [string, ...string[]];
-export declare const MediaFormatSelection: {
-    label: string;
-    description: string;
-    value: "ONA" | "OVA" | "SERIE" | "FILM" | "SPECIAL" | "TV_SHORT";
-}[];
 export declare const MediaStatusObj: {
     AIRING: {
         label: string;
