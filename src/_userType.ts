@@ -5,9 +5,9 @@ import { IImage } from "./_imageType";
 import { IUserAnimeListStatus, IUserRoles } from "./utils";
 
 export interface IUser {
-  _id: Schema.Types.ObjectId;
+  // _id: Schema.Types.ObjectId;
   id: string;
-
+  accountId: string;
   username: string;
   displayName: string;
   bio?: string;
