@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/Actunime/types/compare/v1.0.16...v1.0.17) (2025-03-11)
+
+
+### Bug Fixes
+
+* accountId ([340f93f](https://github.com/Actunime/types/commit/340f93f0a1c03da18477aabc269abac2a3390bd8))
+
 ## [1.0.16](https://github.com/Actunime/types/compare/v1.0.15...v1.0.16) (2025-02-27)
 
 
