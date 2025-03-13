@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/Actunime/types/compare/v1.0.17...v1.0.18) (2025-03-13)
+
+
+### Bug Fixes
+
+* patch id not optionnal ([4c00fe0](https://github.com/Actunime/types/commit/4c00fe01d7fe2846715f3b81db0fff366e119c22))
+
 ## [1.0.17](https://github.com/Actunime/types/compare/v1.0.16...v1.0.17) (2025-03-11)
 
 
