@@ -5,7 +5,7 @@ import { IPatchStatus, IPatchType, ITargetPath } from "./utils";
 
 export interface IPatch<T = any, Type = IPatchType> {
   _id: Schema.Types.ObjectId; // ID Mongoose
-  id?: string; // ID de la demande
+  id: string; // ID de la demande
   ref?: { id: string; } // Reference a un autre patch
   type: Type; // Type de demande
   status: IPatchStatus; // Statut de la demande

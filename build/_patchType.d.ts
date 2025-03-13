@@ -3,7 +3,7 @@ import { IPaginationResponse } from "./_paginationType";
 import { IPatchStatus, IPatchType, ITargetPath } from "./utils";
 export interface IPatch<T = any, Type = IPatchType> {
     _id: Schema.Types.ObjectId;
-    id?: string;
+    id: string;
     ref?: {
         id: string;
     };
