@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/Actunime/types/compare/v1.0.18...v1.0.19) (2025-03-14)
+
+
+### Bug Fixes
+
+* **types:** améliorations ([239adc1](https://github.com/Actunime/types/commit/239adc110fe931f25216e0adf833fa1007500d70))
+
 ## [1.0.18](https://github.com/Actunime/types/compare/v1.0.17...v1.0.18) (2025-03-13)
 
 
