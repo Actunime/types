@@ -1,14 +1,14 @@
 export declare const PatchTypeObj: {
     CREATE: string;
     UPDATE: string;
-    MODERATOR_CREATE: string;
-    MODERATOR_UPDATE: string;
+    DELETE: string;
+    RESTORE: string;
 };
 export type IPatchType = keyof typeof PatchTypeObj;
 export declare const PatchTypeArray: IPatchType[] & [string, ...string[]];
 export declare const PatchTypeSelection: {
     label: string;
-    value: "CREATE" | "UPDATE" | "MODERATOR_CREATE" | "MODERATOR_UPDATE";
+    value: "CREATE" | "UPDATE" | "DELETE" | "RESTORE";
 }[];
 export declare const PatchStatusObj: {
     PENDING: string;

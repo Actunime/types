@@ -1,24 +1,18 @@
 import { Schema } from "mongoose";
 import { IPaginationResponse } from "./_paginationType";
-import { IUser } from "./_userType";
+import { IActivityAction, IActivityType, ITargetPath } from "./utils";
 export interface IActivity {
     _id: Schema.Types.ObjectId;
     id: string;
-    type: string;
-    action: string;
+    type: IActivityType;
+    action: IActivityAction;
     author?: {
         id: string;
-        data?: IUser;
     };
-    target?: {
+    targets: {
+        path: ITargetPath;
         id: string;
-        data?: any;
-    };
-    targetPath: string;
-    changes?: {
-        before: any;
-        after: any;
-    };
+    }[];
     params?: any;
     updatedAt?: Date;
     createdAt: Date;

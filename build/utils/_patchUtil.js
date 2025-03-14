@@ -4,8 +4,8 @@ exports.PatchStatusSelection = exports.PatchStatusArray = exports.PatchStatusObj
 exports.PatchTypeObj = {
     CREATE: "Création",
     UPDATE: "Modification",
-    MODERATOR_CREATE: "Création par modération",
-    MODERATOR_UPDATE: "Modification par modération"
+    DELETE: "Suppression",
+    RESTORE: "Restauration",
 };
 exports.PatchTypeArray = Object.keys(exports.PatchTypeObj);
 exports.PatchTypeSelection = exports.PatchTypeArray.map((key) => ({

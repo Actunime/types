@@ -1,8 +1,8 @@
 export const PatchTypeObj = {
   CREATE: "Création",
   UPDATE: "Modification",
-  MODERATOR_CREATE: "Création par modération",
-  MODERATOR_UPDATE: "Modification par modération"
+  DELETE: "Suppression",
+  RESTORE: "Restauration",
 };
 
 export type IPatchType = keyof typeof PatchTypeObj;
