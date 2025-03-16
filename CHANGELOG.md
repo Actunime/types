@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/Actunime/types/compare/v1.0.19...v1.0.20) (2025-03-16)
+
+
+### Bug Fixes
+
+* **rename:** rejected a la place de denied ([e17898c](https://github.com/Actunime/types/commit/e17898c6bd0c3bb3ad2a1e0ff4f8eb21fac68090))
+
 ## [1.0.19](https://github.com/Actunime/types/compare/v1.0.18...v1.0.19) (2025-03-14)
 
 
