@@ -14,12 +14,12 @@ export declare const PatchStatusObj: {
     PENDING: string;
     PROGRESS: string;
     ACCEPTED: string;
-    DENIED: string;
+    REJECTED: string;
 };
 export type IPatchStatus = keyof typeof PatchStatusObj;
 export declare const PatchStatusArray: IPatchStatus[] & [string, ...string[]];
 export declare const PatchStatusSelection: {
     label: string;
-    value: "PENDING" | "PROGRESS" | "ACCEPTED" | "DENIED";
+    value: "PENDING" | "PROGRESS" | "ACCEPTED" | "REJECTED";
 }[];
 //# sourceMappingURL=_patchUtil.d.ts.map

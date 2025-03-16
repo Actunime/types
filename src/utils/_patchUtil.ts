@@ -17,7 +17,7 @@ export const PatchStatusObj = {
   PENDING: "En attente",
   PROGRESS: "En cours de vérification",
   ACCEPTED: "Accepté",
-  DENIED: "Refusé"
+  REJECTED: "Refusé"
 };
 
 export type IPatchStatus = keyof typeof PatchStatusObj;

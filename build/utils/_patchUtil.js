@@ -16,7 +16,7 @@ exports.PatchStatusObj = {
     PENDING: "En attente",
     PROGRESS: "En cours de vérification",
     ACCEPTED: "Accepté",
-    DENIED: "Refusé"
+    REJECTED: "Refusé"
 };
 exports.PatchStatusArray = Object.keys(exports.PatchStatusObj);
 exports.PatchStatusSelection = exports.PatchStatusArray.map((key) => ({
