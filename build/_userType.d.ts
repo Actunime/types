@@ -19,7 +19,7 @@ export interface IUser {
     disabled?: IUserDisabled;
     premium?: IUserPremium;
     preferences: IUserPreferences;
-    animes: IUserAnimeListe[];
+    animes?: IUserAnimeListe[];
     createdAt: Date;
     updatedAt: Date;
     deletedAt: Date;

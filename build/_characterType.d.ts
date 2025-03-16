@@ -10,16 +10,16 @@ export interface ICharacter extends IMediaBase {
             content: string;
         }[];
     };
-    age: number;
-    birthDate: Date | string;
+    age?: number;
+    birthDate?: Date | string;
     gender: ICharacterGender;
     species: ICharacterSpecies;
-    bio: string;
+    bio?: string;
     avatar?: {
         id: string;
         data?: IImage;
     };
-    actors: {
+    actors?: {
         id: string;
         data?: IPerson;
     }[];

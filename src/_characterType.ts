@@ -6,16 +6,16 @@ import type { IPerson } from "./_personType";
 
 export interface ICharacter extends IMediaBase {
   name: { default: string; alias?: { content: string }[] };
-  age: number;
-  birthDate: Date | string;
+  age?: number;
+  birthDate?: Date | string;
   gender: ICharacterGender;
   species: ICharacterSpecies;
-  bio: string;
+  bio?: string;
   avatar?: {
     id: string;
     data?: IImage; // Virtual
   };
-  actors: {
+  actors?: {
     id: string;
     data?: IPerson; // Virtual
   }[];

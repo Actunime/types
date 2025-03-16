@@ -12,16 +12,16 @@ export interface ITrack extends IMediaBase {
         }[];
     };
     pubDate: Date | string;
-    description: string;
+    description?: string;
     cover?: {
         id: string;
         data?: IImage;
     };
-    artists: {
+    artists?: {
         id: string;
         data?: IPerson;
     }[];
-    links: IMediaLink[];
+    links?: IMediaLink[];
 }
 export interface ITrackPopulated extends Omit<ITrack, "persons"> {
     persons: IPerson[];

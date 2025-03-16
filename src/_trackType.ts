@@ -9,13 +9,13 @@ export interface ITrack extends IMediaBase {
   type: ITrackType; // ITrackType;
   name: { default: string; alias?: { content: string }[] };
   pubDate: Date | string;
-  description: string;
+  description?: string;
   cover?: {
     id: string;
     data?: IImage; // Virtual
   };
-  artists: { id: string; data?: IPerson }[];
-  links: IMediaLink[];
+  artists?: { id: string; data?: IPerson }[];
+  links?: IMediaLink[];
 }
 
 export interface ITrackPopulated extends Omit<ITrack, "persons"> {
