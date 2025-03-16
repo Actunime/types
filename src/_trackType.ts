@@ -9,7 +9,7 @@ export interface ITrack extends IMediaBase {
   type: ITrackType; // ITrackType;
   name: { default: string; alias?: { content: string }[] };
   pubDate: Date | string;
-  bio?: string;
+  description: string;
   cover?: {
     id: string;
     data?: IImage; // Virtual

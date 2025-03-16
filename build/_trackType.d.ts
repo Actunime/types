@@ -12,7 +12,7 @@ export interface ITrack extends IMediaBase {
         }[];
     };
     pubDate: Date | string;
-    bio?: string;
+    description: string;
     cover?: {
         id: string;
         data?: IImage;
