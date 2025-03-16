@@ -16,17 +16,10 @@ import type {
   IMediaRelationNeutreInput,
   IMediaTitle,
 } from "./_mediaType";
-// import type {
-//   IMediaGenres,
-//   IMediaParentLabel,
-//   IMediaSource,
-//   IMediaStatus
-// } from '@actunime/utils/_mediaUtil';
 
 import type { IPaginationResponse } from "./_paginationType";
 import type { IPerson } from "./_personType";
 import type { ITrack } from "./_trackType";
-// import { IPersonRole } from '@actunime/utils/_personUtil';
 import { IImage } from "./_imageType";
 import {
   IMediaGenres,
@@ -35,13 +28,12 @@ import {
   IMediaStatus,
 } from "./utils/_mediaUtil";
 import { IAnimeFormat } from "./utils/_animeUtil";
-import { ICharacterRole, IPersonRole } from "./utils";
 
 export interface IAnimeEpisode {
   airing?: number;
   nextAiringDate?: string;
   total?: number;
-  durationMinute?: number;
+  durationMinutes?: number;
 }
 
 export interface IAnimeRoot extends IMediaBase {

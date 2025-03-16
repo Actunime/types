@@ -13,7 +13,7 @@ export interface IAnimeEpisode {
     airing?: number;
     nextAiringDate?: string;
     total?: number;
-    durationMinute?: number;
+    durationMinutes?: number;
 }
 export interface IAnimeRoot extends IMediaBase {
     groupe: {
