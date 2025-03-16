@@ -1,3 +1,11 @@
+## [1.0.21](https://github.com/Actunime/types/compare/v1.0.20...v1.0.21) (2025-03-16)
+
+
+### Bug Fixes
+
+* **name:** add s to durationMinute ([baacbe3](https://github.com/Actunime/types/commit/baacbe3d7a738b90ca9aa12eff269d8c692bc615))
+* **name:** track bio to description ([9637795](https://github.com/Actunime/types/commit/96377953c0f6ef8e99eb943f48faf2be60c4f257))
+
 ## [1.0.20](https://github.com/Actunime/types/compare/v1.0.19...v1.0.20) (2025-03-16)
 
 
