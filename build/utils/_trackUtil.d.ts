@@ -9,7 +9,7 @@ export declare const TrackTypeObj: {
         description: string;
         value: string;
     };
-    OST: {
+    BGM: {
         label: string;
         description: string;
         value: string;
@@ -25,6 +25,6 @@ export declare const TrackTypeArray: ITrackType[] & [string, ...string[]];
 export declare const TrackTypeSelection: {
     label: string;
     description: string;
-    value: "OPENING" | "ENDING" | "OST" | "INSERT";
+    value: "OPENING" | "ENDING" | "BGM" | "INSERT";
 }[];
 //# sourceMappingURL=_trackUtil.d.ts.map

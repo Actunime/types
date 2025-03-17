@@ -9,10 +9,10 @@ export const TrackTypeObj = {
     description: "Générique de fin",
     value: "ENDING",
   },
-  OST: {
-    label: "OST",
+  BGM: {
+    label: "BGM",
     description: "Musique de fond",
-    value: "OST",
+    value: "BGM",
   },
   INSERT: {
     label: "INSERT",
