@@ -1,3 +1,11 @@
+## [1.0.23](https://github.com/Actunime/types/compare/v1.0.22...v1.0.23) (2025-03-17)
+
+
+### Bug Fixes
+
+* **types:** alias.content => alias ([64b8926](https://github.com/Actunime/types/commit/64b8926fe100f27244aa0009c1f7ce4da2b5c95e))
+* **types:** bio => description ([d881c4b](https://github.com/Actunime/types/commit/d881c4b34bc049b57228e2110abe1dce8a8122c3))
+
 ## [1.0.22](https://github.com/Actunime/types/compare/v1.0.21...v1.0.22) (2025-03-16)
 
 
