@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/Actunime/types/compare/v1.0.25...v1.0.26) (2025-03-17)
+
+
+### Bug Fixes
+
+* **type:** nextAiringDate => IDate ([3b3dd07](https://github.com/Actunime/types/commit/3b3dd07d47cfdfe30ead50f84c493c9ff671d196))
+
 ## [1.0.25](https://github.com/Actunime/types/compare/v1.0.24...v1.0.25) (2025-03-17)
 
 
