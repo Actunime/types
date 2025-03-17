@@ -1,10 +1,10 @@
 import { IAnime } from "./_animeType";
 import { IManga } from "./_mangaType";
-import { IMediaBase } from "./_mediaType";
+import { IMediaBase, IMediaTitle } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 
 export interface IGroupe extends IMediaBase {
-  name: string;
+  name: IMediaTitle;
   animes?: IAnime[]; // Virtual
   mangas?: IManga[]; // Virtual
 }
