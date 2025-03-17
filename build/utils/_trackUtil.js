@@ -19,7 +19,7 @@ exports.TrackTypeObj = {
     },
     INSERT: {
         label: "INSERT",
-        description: "Musique insérée pendant une scène",
+        description: "Musique ponctuelle et unique",
         value: "INSERT",
     },
 };

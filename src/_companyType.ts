@@ -1,10 +1,9 @@
-import { IImage } from "./_imageType";
-import type { IDate, IMediaBase, IMediaLink } from "./_mediaType";
+import type { IDate, IMediaBase, IMediaLink, IMediaTitle } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 
 export interface ICompany extends IMediaBase {
   type: "STUDIO" | "PRODUCER";
-  name: string;
+  name: IMediaTitle;
   description?: string;
   links?: IMediaLink[];
   logo?: { id: string; };
