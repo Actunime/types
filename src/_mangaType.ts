@@ -27,7 +27,7 @@ import { IPerson } from "./_personType";
 
 export interface IMangaChapterVolums {
   airing?: number;
-  nextAiringDate?: Date | string;
+  nextAiringDate?: IMediaDate;
   total?: number;
 }
 export interface IMangaRoot extends IMediaBase {

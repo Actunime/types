@@ -13,8 +13,11 @@ export interface IMediaTitle {
     alias?: string[];
 }
 export interface IMediaDate {
-    start?: string;
-    end?: string;
+    year?: number;
+    month?: number;
+    day?: number;
+    hour?: number;
+    minute?: number;
 }
 export interface IMediaImage {
     cover?: string;

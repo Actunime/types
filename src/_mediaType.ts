@@ -16,8 +16,11 @@ export interface IMediaTitle {
 }
 
 export interface IMediaDate {
-  start?: string;
-  end?: string;
+  year?: number,
+  month?: number,
+  day?: number,
+  hour?: number,
+  minute?: number
 }
 
 export interface IMediaImage {

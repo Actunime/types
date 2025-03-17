@@ -1,6 +1,7 @@
 import { IPaginationResponse } from "./_paginationType";
 import { IImage } from "./_imageType";
 import { IUserAnimeListStatus, IUserRoles } from "./utils";
+import { IMediaDate } from "./_mediaType";
 export interface IUser {
     id: string;
     accountId: string;
@@ -62,8 +63,8 @@ export interface IUserAnimeListe {
     note?: string;
     favoris?: boolean;
     rank?: number;
-    startedAt?: Date;
-    completedAt?: Date;
+    startedAt?: IMediaDate;
+    completedAt?: IMediaDate;
     createdAt?: Date;
     updatedAt?: Date;
 }
