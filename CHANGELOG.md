@@ -1,3 +1,10 @@
+## [1.0.30](https://github.com/Actunime/types/compare/v1.0.29...v1.0.30) (2025-03-17)
+
+
+### Bug Fixes
+
+* **types:** name ([e8b08f6](https://github.com/Actunime/types/commit/e8b08f63ed9a07f0f789e928582b1c6120631601))
+
 ## [1.0.29](https://github.com/Actunime/types/compare/v1.0.28...v1.0.29) (2025-03-17)
 
 
