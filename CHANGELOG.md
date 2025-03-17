@@ -1,3 +1,10 @@
+## [1.0.27](https://github.com/Actunime/types/compare/v1.0.26...v1.0.27) (2025-03-17)
+
+
+### Bug Fixes
+
+* **type:** date syntax & add seconds ([446673a](https://github.com/Actunime/types/commit/446673a2daf4de52a5132b51cfb5f6fe04c049d4))
+
 ## [1.0.26](https://github.com/Actunime/types/compare/v1.0.25...v1.0.26) (2025-03-17)
 
 
