@@ -5,6 +5,7 @@ import type { ICompany } from "./_companyType";
 import type { IGroupe } from "./_groupeType";
 import type { IManga } from "./_mangaType";
 import type {
+  IDate,
   IMediaBase,
   IMediaCharacterRelation,
   IMediaDate,
@@ -31,7 +32,7 @@ import { IAnimeFormat } from "./utils/_animeUtil";
 
 export interface IAnimeEpisode {
   airing?: number;
-  nextAiringDate?: string;
+  nextAiringDate?: IDate;
   total?: number;
   durationMinutes?: number;
 }

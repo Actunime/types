@@ -2,7 +2,7 @@ import type { ICharacter } from "./_characterType";
 import type { ICompany } from "./_companyType";
 import type { IGroupe } from "./_groupeType";
 import type { IManga } from "./_mangaType";
-import type { IMediaBase, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaPersonRelation, IMediaRelation, IMediaRelationInput, IMediaRelationNeutre, IMediaRelationNeutreInput, IMediaTitle } from "./_mediaType";
+import type { IDate, IMediaBase, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaPersonRelation, IMediaRelation, IMediaRelationInput, IMediaRelationNeutre, IMediaRelationNeutreInput, IMediaTitle } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 import type { IPerson } from "./_personType";
 import type { ITrack } from "./_trackType";
@@ -11,7 +11,7 @@ import { IMediaGenres, IMediaParentLabel, IMediaSource, IMediaStatus } from "./u
 import { IAnimeFormat } from "./utils/_animeUtil";
 export interface IAnimeEpisode {
     airing?: number;
-    nextAiringDate?: string;
+    nextAiringDate?: IDate;
     total?: number;
     durationMinutes?: number;
 }
