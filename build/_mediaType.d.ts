@@ -10,9 +10,7 @@ export interface IMediaBase {
 }
 export interface IMediaTitle {
     default: string;
-    alias?: {
-        content: string;
-    }[];
+    alias?: string[];
 }
 export interface IMediaDate {
     start?: string;

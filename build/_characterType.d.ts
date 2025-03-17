@@ -1,15 +1,10 @@
 import { ICharacterGender, ICharacterSpecies } from "./utils/_characterUtil";
 import { IImage } from "./_imageType";
-import { IMediaBase } from "./_mediaType";
+import { IMediaBase, IMediaTitle } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 import type { IPerson } from "./_personType";
 export interface ICharacter extends IMediaBase {
-    name: {
-        default: string;
-        alias?: {
-            content: string;
-        }[];
-    };
+    name: IMediaTitle;
     age?: number;
     birthDate?: Date | string;
     gender: ICharacterGender;

@@ -1,14 +1,9 @@
 import { IImage } from "./_imageType";
-import type { IMediaBase, IMediaLink } from "./_mediaType";
+import type { IMediaBase, IMediaLink, IMediaTitle } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 export interface IPerson extends IMediaBase {
     isGroupe: boolean;
-    name: {
-        default: string;
-        alias?: {
-            content: string;
-        }[];
-    };
+    name: IMediaTitle;
     birthDate?: string;
     deathDate?: string;
     description?: string;
