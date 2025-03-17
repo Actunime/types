@@ -19,8 +19,9 @@ export interface IDate {
   year?: number,
   month?: number,
   day?: number,
-  hour?: number,
-  minute?: number
+  hours?: number,
+  minutes?: number,
+  seconds?: number
 }
 
 export interface IMediaDate {
