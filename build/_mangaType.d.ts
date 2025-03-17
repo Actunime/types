@@ -5,12 +5,12 @@ import { ICharacter } from "./_characterType";
 import { ICompany } from "./_companyType";
 import { IGroupe } from "./_groupeType";
 import { IImage } from "./_imageType";
-import { IMediaBase, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaPersonRelation, IMediaRelationInput, IMediaRelationNeutre, IMediaRelationNeutreInput, IMediaTitle } from "./_mediaType";
+import { IDate, IMediaBase, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaPersonRelation, IMediaRelationInput, IMediaRelationNeutre, IMediaRelationNeutreInput, IMediaTitle } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPerson } from "./_personType";
 export interface IMangaChapterVolums {
     airing?: number;
-    nextAiringDate?: Date | string;
+    nextAiringDate?: IDate;
     total?: number;
 }
 export interface IMangaRoot extends IMediaBase {

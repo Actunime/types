@@ -1,5 +1,5 @@
 import { IImage } from "./_imageType";
-import type { IMediaBase, IMediaLink } from "./_mediaType";
+import type { IDate, IMediaBase, IMediaLink } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 
 export interface ICompany extends IMediaBase {
@@ -8,7 +8,7 @@ export interface ICompany extends IMediaBase {
   description?: string;
   links?: IMediaLink[];
   logo?: { id: string; };
-  createdDate?: string;
+  createdDate?: IDate;
 }
 
 export type ICompanyPaginationResponse = IPaginationResponse<ICompany>;

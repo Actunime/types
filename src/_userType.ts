@@ -3,6 +3,7 @@ import { Schema } from "mongoose";
 import { IPaginationResponse } from "./_paginationType";
 import { IImage } from "./_imageType";
 import { IUserAnimeListStatus, IUserRoles } from "./utils";
+import { IDate } from "./_mediaType";
 
 export interface IUser {
   // _id: Schema.Types.ObjectId;
@@ -65,8 +66,8 @@ export interface IUserAnimeListe {
   note?: string;
   favoris?: boolean;
   rank?: number;
-  startedAt?: Date;
-  completedAt?: Date;
+  startedDate?: IDate;
+  completedDate?: IDate;
 
   createdAt?: Date;
   updatedAt?: Date;

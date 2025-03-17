@@ -11,12 +11,12 @@ import { ICompany } from "./_companyType";
 import { IGroupe } from "./_groupeType";
 import { IImage } from "./_imageType";
 import {
+  IDate,
   IMediaBase,
   IMediaCharacterRelation,
   IMediaDate,
   IMediaLink,
   IMediaPersonRelation,
-  IMediaRelation,
   IMediaRelationInput,
   IMediaRelationNeutre,
   IMediaRelationNeutreInput,
@@ -27,7 +27,7 @@ import { IPerson } from "./_personType";
 
 export interface IMangaChapterVolums {
   airing?: number;
-  nextAiringDate?: Date | string;
+  nextAiringDate?: IDate;
   total?: number;
 }
 export interface IMangaRoot extends IMediaBase {

@@ -1,12 +1,12 @@
 import { IImage } from "./_imageType";
-import { IMediaBase, IMediaLink, IMediaTitle } from "./_mediaType";
+import { IDate, IMediaBase, IMediaLink, IMediaTitle } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPerson } from "./_personType";
 import { ITrackType } from "./utils";
 export interface ITrack extends IMediaBase {
     type: ITrackType;
     name: IMediaTitle;
-    pubDate: Date | string;
+    pubDate: IDate;
     description?: string;
     cover?: {
         id: string;

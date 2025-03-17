@@ -1,4 +1,4 @@
-import type { IMediaBase, IMediaLink } from "./_mediaType";
+import type { IDate, IMediaBase, IMediaLink } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 export interface ICompany extends IMediaBase {
     type: "STUDIO" | "PRODUCER";
@@ -8,7 +8,7 @@ export interface ICompany extends IMediaBase {
     logo?: {
         id: string;
     };
-    createdDate?: string;
+    createdDate?: IDate;
 }
 export type ICompanyPaginationResponse = IPaginationResponse<ICompany>;
 //# sourceMappingURL=_companyType.d.ts.map

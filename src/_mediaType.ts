@@ -15,9 +15,17 @@ export interface IMediaTitle {
   alias?: string[];
 }
 
+export interface IDate {
+  year?: number,
+  month?: number,
+  day?: number,
+  hour?: number,
+  minute?: number
+}
+
 export interface IMediaDate {
-  start?: string;
-  end?: string;
+  start?: IDate;
+  end?: IDate;
 }
 
 export interface IMediaImage {
