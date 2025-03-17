@@ -1,3 +1,10 @@
+## [1.0.28](https://github.com/Actunime/types/compare/v1.0.27...v1.0.28) (2025-03-17)
+
+
+### Bug Fixes
+
+* **track:** ost => bgm ([315f47d](https://github.com/Actunime/types/commit/315f47d5ebadea97624404f406d05822890e15c9))
+
 ## [1.0.27](https://github.com/Actunime/types/compare/v1.0.26...v1.0.27) (2025-03-17)
 
 
