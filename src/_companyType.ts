@@ -5,7 +5,7 @@ import type { IPaginationResponse } from "./_paginationType";
 export interface ICompany extends IMediaBase {
   type: "STUDIO" | "PRODUCER";
   name: string;
-  bio?: string;
+  description?: string;
   links?: IMediaLink[];
   logo?: { id: string; };
   createdDate?: string;

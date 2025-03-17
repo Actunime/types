@@ -10,7 +10,7 @@ export interface IPerson extends IMediaBase {
   };
   birthDate?: string;
   deathDate?: string;
-  bio?: string;
+  description?: string;
   avatar?: { id: string; data?: IImage };
   links?: IMediaLink[];
 }

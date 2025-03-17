@@ -6,7 +6,7 @@ export interface IUser {
     accountId: string;
     username: string;
     displayName: string;
-    bio?: string;
+    description?: string;
     roles: IUserRoles[];
     avatar?: {
         id: string;

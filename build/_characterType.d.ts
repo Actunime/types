@@ -14,7 +14,7 @@ export interface ICharacter extends IMediaBase {
     birthDate?: Date | string;
     gender: ICharacterGender;
     species: ICharacterSpecies;
-    bio?: string;
+    description?: string;
     avatar?: {
         id: string;
         data?: IImage;
