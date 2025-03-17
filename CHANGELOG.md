@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/Actunime/types/compare/v1.0.24...v1.0.25) (2025-03-17)
+
+
+### Bug Fixes
+
+* **rollback:** changement du format des dates modifiables par formulaire ([8946bcb](https://github.com/Actunime/types/commit/8946bcbcec244dc937086e705ee0b9e9b1edf96b))
+
 ## [1.0.24](https://github.com/Actunime/types/compare/v1.0.23...v1.0.24) (2025-03-17)
 
 
