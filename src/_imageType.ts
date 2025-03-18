@@ -8,5 +8,9 @@ export interface IImageRoot {
 }
 
 export type IImage = IImageRoot & IMedia;
+export interface IImageFull extends IImage {
+  location: string;
+  url: string;
+};
 export type IImageDB = IMediaDB & IImage;
 export type IImagePaginationResponse = IPaginationResponse<IImage>;

@@ -1,7 +1,6 @@
 import type {
   IDate,
   IMediaDB,
-  IMediaCharacterRelation,
   IMediaDate,
   IMediaLink,
   IMediaRelation,
@@ -17,7 +16,13 @@ import {
   IMediaStatus,
 } from "./utils/_mediaUtil";
 import { IAnimeFormat } from "./utils/_animeUtil";
-import { IPersonRelation } from "./_personType";
+import { IPerson, IPersonFull, IPersonRelation } from "./_personType";
+import { IGroupe, IGroupeFull } from "./_groupeType";
+import { IManga, IMangaFull, IMangaRelation } from "./_mangaType";
+import { ICompany, ICompanyFull } from "./_companyType";
+import { ICharacter, ICharacterFull, ICharacterRelation } from "./_characterType";
+import { IImage, IImageFull } from "./_imageType";
+import { ITrack, ITrackFull } from "./_trackType";
 
 export interface IAnimeEpisode {
   airing?: number;
@@ -31,7 +36,7 @@ export type IAnimeRelation = IMediaRelation & { label?: string; };
 export interface IAnimeRoot {
   groupe: IMediaRelation;
   parent?: IAnimeRelation;
-  manga?: IMediaRelation;
+  manga?: IMangaRelation;
   source?: IMediaSource;
   title: IMediaTitle;
   synopsis?: string;
@@ -50,10 +55,21 @@ export interface IAnimeRoot {
 
   companys?: IMediaRelation[];
   staffs?: IPersonRelation[];
-  characters?: IMediaCharacterRelation[];
+  characters?: ICharacterRelation[];
   tracks?: IMediaRelation[];
 }
 
 export type IAnime = IAnimeRoot & IMedia;
+export interface IAnimeFull extends IAnime {
+  groupe: IGroupeFull;
+  parent: IAnimeRelation & IAnimeFull;
+  manga: IMangaRelation & IMangaFull;
+  cover: IImageFull;
+  banner: IImageFull;
+  companys: ICompanyFull[];
+  staffs: (IPersonRelation & IPersonFull)[];
+  characters: (ICharacterRelation & ICharacterFull)[];
+  tracks: ITrackFull[];
+}
 export type IAnimeDB = IMediaDB & IAnime;
-export type IAnimePaginationResponse = IPaginationResponse<IAnime>;
+export type IAnimePaginationResponse<T extends IAnime | IAnimeFull = IAnime> = IPaginationResponse<T>;

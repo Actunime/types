@@ -1,5 +1,4 @@
 import { Schema } from "mongoose";
-import { ICharacterRole, IPersonRole } from "./utils";
 export interface IMedia {
     id: string;
     isVerified: boolean;
@@ -34,10 +33,4 @@ export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
 export type IMediaRelation = {
     id: string;
 };
-export interface IMediaCharacterRelation extends IMediaRelation {
-    role?: ICharacterRole;
-}
-export interface IMediaPersonRelation extends IMediaRelation {
-    role?: IPersonRole;
-}
 //# sourceMappingURL=_mediaType.d.ts.map

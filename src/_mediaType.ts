@@ -40,5 +40,3 @@ export interface IMediaLink {
 export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
 
 export type IMediaRelation = { id: string; }
-export interface IMediaCharacterRelation extends IMediaRelation { role?: ICharacterRole; }
-export interface IMediaPersonRelation extends IMediaRelation { role?: IPersonRole; }

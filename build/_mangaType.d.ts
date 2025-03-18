@@ -1,8 +1,12 @@
 import { IMangaFormat } from "./utils/_mangaUtil";
 import { IMediaGenres, IMediaSource, IMediaStatus } from "./utils/_mediaUtil";
-import { IDate, IMediaDB, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaTitle, IMediaRelation, IMedia } from "./_mediaType";
+import { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaTitle, IMediaRelation, IMedia } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
-import { IPersonRelation } from "./_personType";
+import { IPersonFull, IPersonRelation } from "./_personType";
+import { IImageFull } from "./_imageType";
+import { ICompanyFull } from "./_companyType";
+import { ICharacterFull, ICharacterRelation } from "./_characterType";
+import { IGroupeFull } from "./_groupeType";
 export interface IMangaChapterVolums {
     airing?: number;
     nextAiringDate?: IDate;
@@ -32,9 +36,18 @@ export interface IMangaRoot {
     banner?: IMediaRelation;
     companys?: IMediaRelation[];
     staffs?: IPersonRelation[];
-    characters?: IMediaCharacterRelation[];
+    characters?: ICharacterRelation[];
 }
 export type IManga = IMangaRoot & IMedia;
+export interface IMangaFull extends IManga {
+    groupe: IGroupeFull;
+    parent: IMangaRelation & IMangaFull;
+    cover: IImageFull;
+    banner: IImageFull;
+    companys: ICompanyFull[];
+    staffs: (IPersonRelation & IPersonFull)[];
+    characters: (ICharacterRelation & ICharacterFull)[];
+}
 export type IMangaDB = IMediaDB & IManga;
 export type IMangaPaginationResponse = IPaginationResponse<IManga>;
 //# sourceMappingURL=_mangaType.d.ts.map

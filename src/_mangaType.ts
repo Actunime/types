@@ -7,7 +7,6 @@ import {
 import {
   IDate,
   IMediaDB,
-  IMediaCharacterRelation,
   IMediaDate,
   IMediaLink,
   IMediaTitle,
@@ -15,7 +14,11 @@ import {
   IMedia,
 } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
-import { IPersonRelation } from "./_personType";
+import { IPersonFull, IPersonRelation } from "./_personType";
+import { IImageFull } from "./_imageType";
+import { ICompanyFull } from "./_companyType";
+import { ICharacterFull, ICharacterRelation } from "./_characterType";
+import { IGroupeFull } from "./_groupeType";
 
 export interface IMangaChapterVolums {
   airing?: number;
@@ -48,9 +51,18 @@ export interface IMangaRoot {
 
   companys?: IMediaRelation[];
   staffs?: IPersonRelation[];
-  characters?: IMediaCharacterRelation[];
+  characters?: ICharacterRelation[];
 }
 
 export type IManga = IMangaRoot & IMedia;
+export interface IMangaFull extends IManga {
+  groupe: IGroupeFull;
+  parent: IMangaRelation & IMangaFull;
+  cover: IImageFull;
+  banner: IImageFull;
+  companys: ICompanyFull[];
+  staffs: (IPersonRelation & IPersonFull)[];
+  characters: (ICharacterRelation & ICharacterFull)[];
+}
 export type IMangaDB = IMediaDB & IManga;
 export type IMangaPaginationResponse = IPaginationResponse<IManga>;
