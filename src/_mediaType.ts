@@ -7,6 +7,7 @@ export interface IMedia {
 
 export interface IMediaDB {
   _id: Schema.Types.ObjectId;
+  __v: number;
   updatedAt: Date | string;
   createdAt: Date | string;
 }
