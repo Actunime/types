@@ -8,7 +8,7 @@ import { ITrackType } from "./utils";
 export interface ITrack extends IMediaBase {
   type: ITrackType; // ITrackType;
   name: IMediaTitle;
-  pubDate: IDate;
+  releaseDate: IDate;
   description?: string;
   cover?: {
     id: string;
