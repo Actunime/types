@@ -1,6 +1,6 @@
-import type { IDate, IMediaDB, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaRelation, IMediaTitle } from "./_mediaType";
+import type { IDate, IMediaDB, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaRelation, IMediaTitle, IMedia } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
-import { IMediaGenres, IMediaParentLabel, IMediaSource, IMediaStatus } from "./utils/_mediaUtil";
+import { IMediaGenres, IMediaSource, IMediaStatus } from "./utils/_mediaUtil";
 import { IAnimeFormat } from "./utils/_animeUtil";
 import { IPersonRelation } from "./_personType";
 export interface IAnimeEpisode {
@@ -10,7 +10,7 @@ export interface IAnimeEpisode {
     durationMinutes?: number;
 }
 export type IAnimeRelation = IMediaRelation & {
-    label?: IMediaParentLabel;
+    label?: string;
 };
 export interface IAnimeRoot {
     groupe: IMediaRelation;
@@ -36,9 +36,7 @@ export interface IAnimeRoot {
     characters?: IMediaCharacterRelation[];
     tracks?: IMediaRelation[];
 }
-export type IAnime = IAnimeRoot & {
-    id: string;
-};
+export type IAnime = IAnimeRoot & IMedia;
 export type IAnimeDB = IMediaDB & IAnime;
 export type IAnimePaginationResponse = IPaginationResponse<IAnime>;
 //# sourceMappingURL=_animeType.d.ts.map

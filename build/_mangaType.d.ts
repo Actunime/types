@@ -1,6 +1,6 @@
 import { IMangaFormat } from "./utils/_mangaUtil";
 import { IMediaGenres, IMediaSource, IMediaStatus } from "./utils/_mediaUtil";
-import { IDate, IMediaDB, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaTitle, IMediaRelation } from "./_mediaType";
+import { IDate, IMediaDB, IMediaCharacterRelation, IMediaDate, IMediaLink, IMediaTitle, IMediaRelation, IMedia } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPersonRelation } from "./_personType";
 export interface IMangaChapterVolums {
@@ -34,9 +34,7 @@ export interface IMangaRoot {
     staffs?: IPersonRelation[];
     characters?: IMediaCharacterRelation[];
 }
-export type IManga = IMangaRoot & {
-    id: string;
-};
+export type IManga = IMangaRoot & IMedia;
 export type IMangaDB = IMediaDB & IManga;
 export type IMangaPaginationResponse = IPaginationResponse<IManga>;
 //# sourceMappingURL=_mangaType.d.ts.map

@@ -7,8 +7,8 @@ export type IActivityTarget = IMediaRelation & { path: ITargetPath };
 export interface IActivityRoot {
   type: IActivityType;
   action: IActivityAction;
-  author?: IMediaRelation;
   targets: IActivityTarget[];
+  author?: IMediaRelation;
   params?: any;
 }
 

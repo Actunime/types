@@ -6,6 +6,7 @@ import type {
   IMediaLink,
   IMediaRelation,
   IMediaTitle,
+  IMedia,
 } from "./_mediaType";
 
 import type { IPaginationResponse } from "./_paginationType";
@@ -25,7 +26,7 @@ export interface IAnimeEpisode {
   durationMinutes?: number;
 }
 
-export type IAnimeRelation = IMediaRelation & { label?: IMediaParentLabel; };
+export type IAnimeRelation = IMediaRelation & { label?: string; };
 
 export interface IAnimeRoot {
   groupe: IMediaRelation;
@@ -53,6 +54,6 @@ export interface IAnimeRoot {
   tracks?: IMediaRelation[];
 }
 
-export type IAnime = IAnimeRoot & { id: string };
+export type IAnime = IAnimeRoot & IMedia;
 export type IAnimeDB = IMediaDB & IAnime;
 export type IAnimePaginationResponse = IPaginationResponse<IAnime>;

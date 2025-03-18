@@ -12,6 +12,7 @@ import {
   IMediaLink,
   IMediaTitle,
   IMediaRelation,
+  IMedia,
 } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPersonRelation } from "./_personType";
@@ -50,6 +51,6 @@ export interface IMangaRoot {
   characters?: IMediaCharacterRelation[];
 }
 
-export type IManga = IMangaRoot & { id: string };
+export type IManga = IMangaRoot & IMedia;
 export type IMangaDB = IMediaDB & IManga;
 export type IMangaPaginationResponse = IPaginationResponse<IManga>;

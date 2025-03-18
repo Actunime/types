@@ -1,4 +1,4 @@
-import type { IDate, IMediaDB, IMediaLink, IMediaRelation, IMediaTitle } from "./_mediaType";
+import type { IDate, IMedia, IMediaDB, IMediaLink, IMediaRelation, IMediaTitle } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 
 export interface ICompanyRoot {
@@ -10,6 +10,6 @@ export interface ICompanyRoot {
   createdDate?: IDate;
 }
 
-export type ICompany = ICompanyRoot & { id: string };
+export type ICompany = ICompanyRoot & IMedia;
 export type ICompanyDB = ICompany & IMediaDB;
 export type ICompanyPaginationResponse = IPaginationResponse<ICompany>;

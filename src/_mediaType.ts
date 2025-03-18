@@ -1,6 +1,11 @@
 import { Schema } from "mongoose";
 import { ICharacterRole, IPersonRole } from "./utils";
 
+export interface IMedia {
+  id: string;
+  isVerified: boolean;
+}
+
 export interface IMediaDB {
   _id: Schema.Types.ObjectId;
   updatedAt: Date | string;
@@ -25,11 +30,6 @@ export interface IDate {
 export interface IMediaDate {
   start?: IDate;
   end?: IDate;
-}
-
-export interface IMediaImage {
-  cover?: string;
-  banner?: string;
 }
 
 export interface IMediaLink {
