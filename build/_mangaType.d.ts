@@ -13,7 +13,7 @@ export interface IMangaChapterVolums {
     total?: number;
 }
 export type IMangaRelation = IMediaRelation & {
-    label: string;
+    label?: string;
 };
 export interface IMangaRoot {
     groupe: IMediaRelation;
