@@ -1,6 +1,7 @@
 import { IPaginationResponse } from "./_paginationType";
 import { IUserAnimeListStatus, IUserRoles } from "./utils";
 import { IDate, IMediaDB, IMediaRelation } from "./_mediaType";
+import { IImageFull } from "./_imageType";
 
 export interface IUserRoot {
   accountId: string;
@@ -15,6 +16,10 @@ export interface IUserRoot {
 }
 
 export type IUser = IUserRoot & { id: string };
+export interface IUserFull extends IUser {
+  avatar?: IImageFull;
+  banner?: IImageFull;
+}
 export type IUserDB = IMediaDB & IUser;
 export type IUserPaginationResponse = IPaginationResponse<IUser>;
 

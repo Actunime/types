@@ -29,7 +29,7 @@ export interface IMangaChapterVolums {
 export type IMangaRelation = IMediaRelation & { label: string };
 
 export interface IMangaRoot {
-  groupe?: IMediaRelation;
+  groupe: IMediaRelation;
   parent?: IMangaRelation;
 
   title: IMediaTitle;
@@ -39,7 +39,6 @@ export interface IMangaRoot {
   format?: IMangaFormat;
   vf?: boolean;
   genres?: IMediaGenres[];
-  themes?: string[];
   status?: IMediaStatus;
   chapters?: IMangaChapterVolums;
   volumes?: IMangaChapterVolums;

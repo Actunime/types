@@ -10,18 +10,47 @@ import {
   ITrack,
   IPatch,
   IUser,
-  IAccount,
   IImage,
-  IUserAnimeListe,
+  IImageFull,
+  IUserFull,
+  IGroupeFull,
+  IMangaFull,
+  IAnimeFull,
+  ICharacterFull,
+  IPersonFull,
+  ITrackFull,
+  ICompanyFull,
+  IPatchFull,
+  IActivityFull,
+  IReportFull,
+  IActivityDB,
+  IAnimeDB,
+  ICharacterDB,
+  ICompanyDB,
+  IGroupeDB,
+  IImageDB,
+  IMangaDB,
+  IPatchDB,
+  IPersonDB,
+  IReportDB,
+  ITrackDB,
+  IUserDB,
+  IUserPaginationResponse,
+  IActivityPaginationResponse,
+  IAnimePaginationResponse,
+  ICharacterPaginationResponse,
+  ICompanyPaginationResponse,
+  IGroupePaginationResponse,
+  IImagePaginationResponse,
+  IMangaPaginationResponse,
+  IPatchPaginationResponse,
+  IPersonPaginationResponse,
+  IReportPaginationResponse,
+  ITrackPaginationResponse,
 } from "../";
 
 export const TargetPathObj = {
   User: "Utilisateur",
-  Account: "Compte",
-  UserProfile: "Profil",
-  UserPreferences: "Préférences",
-  UserAnimeListe: "Liste d'animes",
-  UserDeleteAnimeFromListe: "Supprimer un anime de la liste",
   // Medias
   Groupe: "Groupe",
   Manga: "Manga",
@@ -35,8 +64,6 @@ export const TargetPathObj = {
   Patch: "Mise à jour",
   Activity: "Activité",
   Report: "Signalement",
-  DisabledUser: "Compte désactivé",
-  PremiumUser: "Compte premium",
 };
 
 export type ITargetPath = keyof typeof TargetPathObj;
@@ -48,9 +75,7 @@ export const TargetPathSelection = TargetPathArray.map((key) => ({
 }));
 
 export type ITargetPathType<T extends ITargetPath> =
-  T extends "Account"
-  ? IAccount
-  : T extends "User"
+  T extends "User"
   ? IUser
   : T extends "Groupe"
   ? IGroupe
@@ -74,16 +99,86 @@ export type ITargetPathType<T extends ITargetPath> =
   ? IReport
   : T extends "Image"
   ? IImage
-  : T extends "UserProfile"
-  ? IUser
-  : T extends "UserPreferences"
-  ? IUser
-  : T extends "UserAnimeListe"
-  ? IUserAnimeListe
-  : T extends "UserDeleteAnimeFromListe"
-  ? IUserAnimeListe
-  : T extends "DisabledUser"
-  ? IUser
-  : T extends "PremiumUser"
-  ? IUser
+  : any;
+
+
+export type ITargetPathTypeFull<T extends ITargetPath> =
+  T extends "User"
+  ? IUserFull
+  : T extends "Groupe"
+  ? IGroupeFull
+  : T extends "Manga"
+  ? IMangaFull
+  : T extends "Anime"
+  ? IAnimeFull
+  : T extends "Character"
+  ? ICharacterFull
+  : T extends "Person"
+  ? IPersonFull
+  : T extends "Track"
+  ? ITrackFull
+  : T extends "Company"
+  ? ICompanyFull
+  : T extends "Patch"
+  ? IPatchFull
+  : T extends "Activity"
+  ? IActivityFull
+  : T extends "Report"
+  ? IReportFull
+  : T extends "Image"
+  ? IImageFull
+  : any;
+
+export type ITargetPathTypeDB<T extends ITargetPath> =
+  T extends "User"
+  ? IUserDB
+  : T extends "Groupe"
+  ? IGroupeDB
+  : T extends "Manga"
+  ? IMangaDB
+  : T extends "Anime"
+  ? IAnimeDB
+  : T extends "Character"
+  ? ICharacterDB
+  : T extends "Person"
+  ? IPersonDB
+  : T extends "Track"
+  ? ITrackDB
+  : T extends "Company"
+  ? ICompanyDB
+  : T extends "Patch"
+  ? IPatchDB
+  : T extends "Activity"
+  ? IActivityDB
+  : T extends "Report"
+  ? IReportDB
+  : T extends "Image"
+  ? IImageDB
+  : any;
+
+export type ITargetPathTypePaginationResponse<T extends ITargetPath> =
+  T extends "User"
+  ? IUserPaginationResponse
+  : T extends "Groupe"
+  ? IGroupePaginationResponse
+  : T extends "Manga"
+  ? IMangaPaginationResponse
+  : T extends "Anime"
+  ? IAnimePaginationResponse
+  : T extends "Character"
+  ? ICharacterPaginationResponse
+  : T extends "Person"
+  ? IPersonPaginationResponse
+  : T extends "Track"
+  ? ITrackPaginationResponse
+  : T extends "Company"
+  ? ICompanyPaginationResponse
+  : T extends "Patch"
+  ? IPatchPaginationResponse
+  : T extends "Activity"
+  ? IActivityPaginationResponse
+  : T extends "Report"
+  ? IReportPaginationResponse
+  : T extends "Image"
+  ? IImagePaginationResponse
   : any;

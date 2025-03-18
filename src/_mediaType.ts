@@ -1,5 +1,4 @@
 import { Schema } from "mongoose";
-import { ICharacterRole, IPersonRole } from "./utils";
 
 export interface IMedia {
   id: string;
