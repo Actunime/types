@@ -1,3 +1,10 @@
+## [1.0.32](https://github.com/Actunime/types/compare/v1.0.31...v1.0.32) (2025-03-18)
+
+
+### Bug Fixes
+
+* **v2:** correction des types ([eacf4a0](https://github.com/Actunime/types/commit/eacf4a0e37fef426216c6c0f2c254a39bf2504a7))
+
 ## [1.0.31](https://github.com/Actunime/types/compare/v1.0.30...v1.0.31) (2025-03-18)
 
 
