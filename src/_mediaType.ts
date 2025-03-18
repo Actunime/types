@@ -1,11 +1,8 @@
 import { Schema } from "mongoose";
 import { ICharacterRole, IPersonRole } from "./utils";
 
-export interface IMediaBase {
+export interface IMediaDB {
   _id: Schema.Types.ObjectId;
-  id: string;
-  isVerified: boolean;
-  isPreAdded: boolean;
   updatedAt: Date | string;
   createdAt: Date | string;
 }
@@ -14,6 +11,7 @@ export interface IMediaTitle {
   default: string;
   alias?: string[];
 }
+export type IMediaName = IMediaTitle;
 
 export interface IDate {
   year?: number,
@@ -41,33 +39,6 @@ export interface IMediaLink {
 
 export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
 
-export interface IMediaRelation<T> {
-  id: string;
-  data?: T;
-}
-
-export interface IMediaCharacterRelation<T> {
-  id: string;
-  role?: ICharacterRole;
-  data?: T;
-}
-
-export interface IMediaPersonRelation<T> {
-  id: string;
-  role?: IPersonRole;
-  data?: T;
-}
-
-export interface IMediaRelationInput<T> {
-  id: string;
-  role?: string;
-}
-
-export interface IMediaRelationNeutre<T> {
-  id: string;
-  data?: T;
-}
-
-export interface IMediaRelationNeutreInput<T> {
-  id: string;
-}
+export type IMediaRelation = { id: string; }
+export interface IMediaCharacterRelation extends IMediaRelation { role?: ICharacterRole; }
+export interface IMediaPersonRelation extends IMediaRelation { role?: IPersonRole; }

@@ -1,24 +1,19 @@
 import { ICharacterGender, ICharacterSpecies } from "./utils/_characterUtil";
-import { IImage } from "./_imageType";
-import { IDate, IMediaBase, IMediaTitle } from "./_mediaType";
+import { IDate, IMediaDB, IMediaRelation, IMediaTitle } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
-import type { IPerson } from "./_personType";
+import type { IPersonRelation } from "./_personType";
 
-export interface ICharacter extends IMediaBase {
+export interface ICharacterRoot {
   name: IMediaTitle;
   age?: number;
   birthDate?: IDate;
-  gender: ICharacterGender;
-  species: ICharacterSpecies;
+  gender?: ICharacterGender;
+  species?: ICharacterSpecies;
   description?: string;
-  avatar?: {
-    id: string;
-    data?: IImage; // Virtual
-  };
-  actors?: {
-    id: string;
-    data?: IPerson; // Virtual
-  }[];
+  avatar?: IMediaRelation;
+  actors?: IPersonRelation;
 }
 
+export type ICharacter = ICharacterRoot & { id: string };
+export type ICharacterDB = IMediaDB & ICharacter;
 export type ICharacterPaginationResponse = IPaginationResponse<ICharacter>;

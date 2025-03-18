@@ -1,11 +1,11 @@
-import { IAnime } from "./_animeType";
-import { IManga } from "./_mangaType";
-import { IMediaBase, IMediaTitle } from "./_mediaType";
+import { IMediaDB, IMediaTitle } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
-export interface IGroupe extends IMediaBase {
+export interface IGroupeRoot {
     name: IMediaTitle;
-    animes?: IAnime[];
-    mangas?: IManga[];
 }
+export type IGroupe = IGroupeRoot & {
+    id: string;
+};
+export type IGroupeDB = IMediaDB & IGroupe;
 export type IGroupePaginationResponse = IPaginationResponse<IGroupe>;
 //# sourceMappingURL=_groupeType.d.ts.map

@@ -1,25 +1,19 @@
-import { IImage } from "./_imageType";
-import { IDate, IMediaBase, IMediaLink, IMediaTitle } from "./_mediaType";
+import { IDate, IMediaDB, IMediaLink, IMediaRelation, IMediaTitle } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
-import { IPerson } from "./_personType";
+import { IPersonRelation } from "./_personType";
 import { ITrackType } from "./utils";
-export interface ITrack extends IMediaBase {
+export interface ITrackRoot {
     type: ITrackType;
     name: IMediaTitle;
-    releaseDate: IDate;
+    releaseDate?: IDate;
     description?: string;
-    cover?: {
-        id: string;
-        data?: IImage;
-    };
-    artists?: {
-        id: string;
-        data?: IPerson;
-    }[];
+    cover?: IMediaRelation;
+    artists?: IPersonRelation[];
     links?: IMediaLink[];
 }
-export interface ITrackPopulated extends Omit<ITrack, "persons"> {
-    persons: IPerson[];
-}
+export type ITrack = ITrackRoot & {
+    id: string;
+};
+export type ITrackDB = IMediaDB & ITrack;
 export type ITrackPaginationResponse = IPaginationResponse<ITrack>;
 //# sourceMappingURL=_trackType.d.ts.map

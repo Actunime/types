@@ -45,7 +45,7 @@ export declare const MediaSourceArray: IMediaSource[] & [string, ...string[]];
 export declare const MediaSourceSelection: {
     label: string;
     description: string;
-    value: "MANGA" | "MANHWA" | "MANHUA" | "LIGHT_NOVEL" | "ORIGINAL" | "VISUAL_NOVEL" | "WEB_NOVEL" | "GAME" | "NOVEL" | "ANIME";
+    value: "ORIGINAL" | "MANGA" | "MANHWA" | "MANHUA" | "LIGHT_NOVEL" | "VISUAL_NOVEL" | "WEB_NOVEL" | "GAME" | "NOVEL" | "ANIME";
 }[];
 export declare const MediaStatusObj: {
     AIRING: {

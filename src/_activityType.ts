@@ -1,22 +1,17 @@
-import { Schema } from "mongoose";
 import { IPaginationResponse } from "./_paginationType";
 import { IActivityAction, IActivityType, ITargetPath } from "./utils";
+import { IMediaDB, IMediaRelation } from "./_mediaType";
 
-export interface IActivity {
-  _id: Schema.Types.ObjectId;
-  id: string;
+export type IActivityTarget = IMediaRelation & { path: ITargetPath };
+
+export interface IActivityRoot {
   type: IActivityType;
   action: IActivityAction;
-  author?: { id: string; };
-  targets: { path: ITargetPath, id: string }[];
+  author?: IMediaRelation;
+  targets: IActivityTarget[];
   params?: any;
-  updatedAt?: Date;
-  createdAt: Date;
 }
 
+export type IActivity = IActivityRoot & { id: string };
+export type IActivityDB = IMediaDB & IActivityRoot;
 export type IActivityPaginationResponse = IPaginationResponse<IActivity>;
-
-export type IActivityCreateProps = Omit<
-  IActivity,
-  "id" | "_id" | "createdAt" | "updatedAt"
->;
