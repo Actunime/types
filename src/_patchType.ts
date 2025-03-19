@@ -12,7 +12,7 @@ export interface IPatchRoot<TPath extends ITargetPath = ITargetPath> {
   description?: string; // Description ajouté par le demandeur
   reason?: string; // Raison d'un refus
   original: ITargetPathType<TPath>; // Données du media avant modification
-  changes: ITargetPathType<TPath>; // Modifications apportées
+  changes: any; // Modifications apportées
   isChangesUpdated: boolean; // Si un modérateur a effectué des modifications en plus; (permet de bloqué l'auteur de faire de nouvelle modification)
   author: IMediaRelation // Auteur de la demande
   moderator?: IMediaRelation // Modérateur qui vérifie

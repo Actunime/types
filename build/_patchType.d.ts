@@ -11,7 +11,7 @@ export interface IPatchRoot<TPath extends ITargetPath = ITargetPath> {
     description?: string;
     reason?: string;
     original: ITargetPathType<TPath>;
-    changes: ITargetPathType<TPath>;
+    changes: any;
     isChangesUpdated: boolean;
     author: IMediaRelation;
     moderator?: IMediaRelation;
