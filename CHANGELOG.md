@@ -1,3 +1,10 @@
+## [1.0.38](https://github.com/Actunime/types/compare/v1.0.37...v1.0.38) (2025-03-18)
+
+
+### Bug Fixes
+
+* **v2:** mangaRelation optionnal label ([7e79f6e](https://github.com/Actunime/types/commit/7e79f6e851ec1764a9e3f4ca9d894f54e2432ebb))
+
 ## [1.0.37](https://github.com/Actunime/types/compare/v1.0.36...v1.0.37) (2025-03-18)
 
 
