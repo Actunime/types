@@ -10,9 +10,9 @@ export interface IPatchRoot<TPath extends ITargetPath = ITargetPath> {
     targetPath: TPath;
     description?: string;
     reason?: string;
-    original: ITargetPathType<TPath>;
-    changes: any;
-    isChangesUpdated: boolean;
+    original?: ITargetPathType<TPath>;
+    changes?: any;
+    isChangesUpdated?: boolean;
     author: IMediaRelation;
     moderator?: IMediaRelation;
 }
