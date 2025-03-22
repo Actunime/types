@@ -18,4 +18,3 @@ export interface ITrackFull extends ITrack {
 }
 export type ITrackDB = IMediaDB & ITrack;
 export type ITrackPaginationResponse = IPaginationResponse<ITrack>;
-//# sourceMappingURL=_trackType.d.ts.map

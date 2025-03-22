@@ -15,4 +15,3 @@ export interface ICompanyFull extends ICompany {
 }
 export type ICompanyDB = ICompany & IMediaDB;
 export type ICompanyPaginationResponse = IPaginationResponse<ICompany>;
-//# sourceMappingURL=_companyType.d.ts.map

@@ -38,6 +38,7 @@ export interface IMangaRoot {
   source?: IMediaSource;
   format?: IMangaFormat;
   vf?: boolean;
+  trailer?: string;
   genres?: IMediaGenres[];
   status?: IMediaStatus;
   chapters?: IMangaChapterVolums;

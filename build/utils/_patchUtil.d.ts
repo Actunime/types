@@ -22,4 +22,3 @@ export declare const PatchStatusSelection: {
     label: string;
     value: "PENDING" | "PROGRESS" | "ACCEPTED" | "REJECTED";
 }[];
-//# sourceMappingURL=_patchUtil.d.ts.map

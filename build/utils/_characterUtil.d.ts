@@ -101,4 +101,3 @@ export declare const CharacterSpeciesSelection: {
     description: string;
     value: "AUTRE" | "HUMAIN" | "ELFE" | "NAIN" | "LEZARD" | "DRAGON" | "ORC";
 }[];
-//# sourceMappingURL=_characterUtil.d.ts.map

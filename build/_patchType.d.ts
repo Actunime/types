@@ -27,4 +27,3 @@ export interface IPatchFull<TPath extends ITargetPath = ITargetPath> extends IPa
 }
 export type IPatchDB<TPath extends ITargetPath = ITargetPath> = IMediaDB & IPatch<TPath>;
 export type IPatchPaginationResponse<TPath extends ITargetPath = ITargetPath> = IPaginationResponse<IPatch<TPath>>;
-//# sourceMappingURL=_patchType.d.ts.map

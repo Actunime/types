@@ -23,4 +23,3 @@ export interface ICharacterFull extends ICharacter {
 }
 export type ICharacterDB = IMediaDB & ICharacter;
 export type ICharacterPaginationResponse = IPaginationResponse<ICharacter>;
-//# sourceMappingURL=_characterType.d.ts.map

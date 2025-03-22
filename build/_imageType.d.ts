@@ -14,4 +14,3 @@ export interface IImageFull extends IImage {
 }
 export type IImageDB = IMediaDB & IImage;
 export type IImagePaginationResponse = IPaginationResponse<IImage>;
-//# sourceMappingURL=_imageType.d.ts.map

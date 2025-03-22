@@ -8,4 +8,3 @@ export declare const CompanyTypeSelection: {
     label: string;
     value: "STUDIO" | "PRODUCER";
 }[];
-//# sourceMappingURL=_companyUtil.d.ts.map

@@ -19,4 +19,3 @@ export interface IPersonFull extends IPerson {
 }
 export type IPersonDB = IPerson & IMediaDB;
 export type IPersonPaginationResponse = IPaginationResponse<IPerson>;
-//# sourceMappingURL=_personType.d.ts.map

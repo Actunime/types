@@ -8,4 +8,3 @@ export interface IGroupeFull extends IGroupe {
 }
 export type IGroupeDB = IMediaDB & IGroupe;
 export type IGroupePaginationResponse = IPaginationResponse<IGroupe>;
-//# sourceMappingURL=_groupeType.d.ts.map

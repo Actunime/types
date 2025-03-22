@@ -19,4 +19,3 @@ export declare const ReportStatusSelection: {
     label: string;
     value: "PENDING" | "REJECTED" | "VERIFIED";
 }[];
-//# sourceMappingURL=_reportUtil.d.ts.map

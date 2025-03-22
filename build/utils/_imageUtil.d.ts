@@ -10,4 +10,3 @@ export declare const ImageLabelSelection: {
     label: string;
     value: "COVER" | "BANNER" | "AVATAR" | "LOGO";
 }[];
-//# sourceMappingURL=_imageUtil.d.ts.map

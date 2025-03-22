@@ -20,4 +20,3 @@ export interface IReportFull<TPath extends ITargetPath = ITargetPath> extends IR
 }
 export type IReportDB = IMediaDB & IReport;
 export type IReportPaginationResponse = IPaginationResponse<IReport>;
-//# sourceMappingURL=_reportType.d.ts.map

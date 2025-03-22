@@ -24,6 +24,7 @@ export interface IMangaRoot {
     source?: IMediaSource;
     format?: IMangaFormat;
     vf?: boolean;
+    trailer?: string;
     genres?: IMediaGenres[];
     status?: IMediaStatus;
     chapters?: IMangaChapterVolums;
@@ -49,4 +50,3 @@ export interface IMangaFull extends IManga {
 }
 export type IMangaDB = IMediaDB & IManga;
 export type IMangaPaginationResponse = IPaginationResponse<IManga>;
-//# sourceMappingURL=_mangaType.d.ts.map

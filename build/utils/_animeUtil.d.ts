@@ -31,4 +31,3 @@ export declare const AnimeFormatSelection: {
     description: string;
     value: "ONA" | "OVA" | "SERIE" | "SERIE_COURTE" | "FILM" | "SPECIAL";
 }[];
-//# sourceMappingURL=_animeUtil.d.ts.map

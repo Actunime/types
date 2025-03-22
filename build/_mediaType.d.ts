@@ -34,4 +34,3 @@ export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
 export type IMediaRelation = {
     id: string;
 };
-//# sourceMappingURL=_mediaType.d.ts.map

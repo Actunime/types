@@ -8,4 +8,3 @@ export interface IPaginationResponse<T> {
     resultsLimit: number;
     resultsCount: number;
 }
-//# sourceMappingURL=_paginationType.d.ts.map

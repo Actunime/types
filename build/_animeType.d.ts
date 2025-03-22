@@ -56,4 +56,3 @@ export interface IAnimeFull extends IAnime {
 }
 export type IAnimeDB = IMediaDB & IAnime;
 export type IAnimePaginationResponse<T extends IAnime | IAnimeFull = IAnime> = IPaginationResponse<T>;
-//# sourceMappingURL=_animeType.d.ts.map

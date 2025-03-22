@@ -7,4 +7,3 @@ export interface IDefaultSite {
         parent: typeof MediaParentLabelSelection;
     };
 }
-//# sourceMappingURL=_defaultSite.d.ts.map

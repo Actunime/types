@@ -84,4 +84,3 @@ export declare const UserAnimeListStatusSelection: {
     label: string;
     value: "PAUSED" | "PLANNING" | "WATCHING" | "COMPLETED" | "DROPPED";
 }[];
-//# sourceMappingURL=_userUtil.d.ts.map

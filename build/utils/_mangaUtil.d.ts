@@ -43,4 +43,3 @@ export declare const MangaFormatSelection: {
     description: string;
     value: "MANGA" | "MANHWA" | "MANHUA" | "LIGHT_NOVEL" | "WEB_LOVEL" | "GRAPHIC_NOVEL" | "DOUJINSHI" | "ONE_SHOT" | "OTHER";
 }[];
-//# sourceMappingURL=_mangaUtil.d.ts.map

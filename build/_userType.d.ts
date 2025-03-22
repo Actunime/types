@@ -39,4 +39,3 @@ export interface IUserAnimeListe {
     createdAt?: Date;
     updatedAt?: Date;
 }
-//# sourceMappingURL=_userType.d.ts.map

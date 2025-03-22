@@ -22,4 +22,3 @@ export interface IActivityFull extends IActivity {
 }
 export type IActivityDB = IMediaDB & IActivityRoot;
 export type IActivityPaginationResponse = IPaginationResponse<IActivity>;
-//# sourceMappingURL=_activityType.d.ts.map

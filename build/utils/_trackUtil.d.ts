@@ -27,4 +27,3 @@ export declare const TrackTypeSelection: {
     description: string;
     value: "OPENING" | "ENDING" | "BGM" | "INSERT";
 }[];
-//# sourceMappingURL=_trackUtil.d.ts.map
