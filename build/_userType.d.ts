@@ -4,10 +4,8 @@ import { IMediaDB, IMediaRelation } from './_mediaType';
 import { IImageFull } from './_imageType';
 export interface IUserRoot {
     accountId: string;
-    username: string;
     displayName: string;
     description?: string;
-    roles: IUserRoles[];
     avatar?: IMediaRelation;
     banner?: IMediaRelation;
     options?: IUserOptions;
@@ -16,6 +14,8 @@ export type IUser = IUserRoot & {
     id: string;
 };
 export interface IUserFull extends IUser {
+    username: string;
+    roles: IUserRoles[];
     avatar?: IImageFull;
     banner?: IImageFull;
 }
