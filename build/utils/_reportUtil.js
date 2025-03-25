@@ -1,22 +1,19 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ReportStatusSelection = exports.ReportStatusArray = exports.ReportStatusObj = exports.ReportSubjectSelection = exports.ReportSubjectArray = exports.ReportSubjectObj = void 0;
-exports.ReportSubjectObj = {
+export const ReportSubjectObj = {
     USER_IMAGE: "Les images que l'utilisateur utilise sont inappropriées",
     USER_INFO: "Les informations mis par l'utilisateur sont inappropriées",
 };
-exports.ReportSubjectArray = Object.keys(exports.ReportSubjectObj);
-exports.ReportSubjectSelection = exports.ReportSubjectArray.map((key) => ({
-    label: exports.ReportSubjectObj[key],
+export const ReportSubjectArray = Object.keys(ReportSubjectObj);
+export const ReportSubjectSelection = ReportSubjectArray.map((key) => ({
+    label: ReportSubjectObj[key],
     value: key,
 }));
-exports.ReportStatusObj = {
+export const ReportStatusObj = {
     PENDING: "En attente",
     REJECTED: "Refusé",
     VERIFIED: "Vérifié",
 };
-exports.ReportStatusArray = Object.keys(exports.ReportStatusObj);
-exports.ReportStatusSelection = exports.ReportStatusArray.map((key) => ({
-    label: exports.ReportStatusObj[key],
+export const ReportStatusArray = Object.keys(ReportStatusObj);
+export const ReportStatusSelection = ReportStatusArray.map((key) => ({
+    label: ReportStatusObj[key],
     value: key,
 }));

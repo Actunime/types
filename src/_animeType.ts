@@ -6,23 +6,18 @@ import type {
   IMediaRelation,
   IMediaTitle,
   IMedia,
-} from "./_mediaType";
+} from './_mediaType';
 
-import type { IPaginationResponse } from "./_paginationType";
-import {
-  IMediaGenres,
-  IMediaParentLabel,
-  IMediaSource,
-  IMediaStatus,
-} from "./utils/_mediaUtil";
-import { IAnimeFormat } from "./utils/_animeUtil";
-import { IPerson, IPersonFull, IPersonRelation } from "./_personType";
-import { IGroupe, IGroupeFull } from "./_groupeType";
-import { IManga, IMangaFull, IMangaRelation } from "./_mangaType";
-import { ICompany, ICompanyFull } from "./_companyType";
-import { ICharacter, ICharacterFull, ICharacterRelation } from "./_characterType";
-import { IImage, IImageFull } from "./_imageType";
-import { ITrack, ITrackFull } from "./_trackType";
+import type { IPaginationResponse } from './_paginationType';
+import { IMediaGenres, IMediaSource, IMediaStatus } from './utils/_mediaUtil';
+import { IAnimeFormat } from './utils/_animeUtil';
+import { IPersonFull, IPersonRelation } from './_personType';
+import { IGroupeFull } from './_groupeType';
+import { IMangaFull, IMangaRelation } from './_mangaType';
+import { ICompanyFull } from './_companyType';
+import { ICharacterFull, ICharacterRelation } from './_characterType';
+import { IImageFull } from './_imageType';
+import { ITrackFull } from './_trackType';
 
 export interface IAnimeEpisode {
   airing?: number;
@@ -31,7 +26,7 @@ export interface IAnimeEpisode {
   durationMinutes?: number;
 }
 
-export type IAnimeRelation = IMediaRelation & { label?: string; };
+export type IAnimeRelation = IMediaRelation & { label?: string };
 
 export interface IAnimeRoot {
   groupe: IMediaRelation;
@@ -72,4 +67,5 @@ export interface IAnimeFull extends IAnime {
   tracks: ITrackFull[];
 }
 export type IAnimeDB = IMediaDB & IAnime;
-export type IAnimePaginationResponse<T extends IAnime | IAnimeFull = IAnime> = IPaginationResponse<T>;
+export type IAnimePaginationResponse<T extends IAnime | IAnimeFull = IAnime> =
+  IPaginationResponse<T>;

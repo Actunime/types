@@ -1,9 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TargetPathSelection = exports.TargetPathArray = exports.TargetPathObj = void 0;
-exports.TargetPathObj = {
+export const TargetPathObj = {
     User: "Utilisateur",
-    // Medias
     Groupe: "Groupe",
     Manga: "Manga",
     Anime: "Anime",
@@ -11,14 +7,13 @@ exports.TargetPathObj = {
     Character: "Personnage",
     Track: "Musique",
     Company: "Société",
-    //
     Image: "Image",
     Patch: "Mise à jour",
     Activity: "Activité",
     Report: "Signalement",
 };
-exports.TargetPathArray = Object.keys(exports.TargetPathObj);
-exports.TargetPathSelection = exports.TargetPathArray.map((key) => ({
-    label: exports.TargetPathObj[key],
+export const TargetPathArray = Object.keys(TargetPathObj);
+export const TargetPathSelection = TargetPathArray.map((key) => ({
+    label: TargetPathObj[key],
     value: key,
 }));

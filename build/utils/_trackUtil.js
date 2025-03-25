@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TrackTypeSelection = exports.TrackTypeArray = exports.TrackTypeObj = void 0;
-exports.TrackTypeObj = {
+export const TrackTypeObj = {
     OPENING: {
         label: "Opening",
         description: "Générique de début",
@@ -23,9 +20,9 @@ exports.TrackTypeObj = {
         value: "INSERT",
     },
 };
-exports.TrackTypeArray = Object.keys(exports.TrackTypeObj);
-exports.TrackTypeSelection = exports.TrackTypeArray.map((key) => ({
-    label: exports.TrackTypeObj[key].label,
-    description: exports.TrackTypeObj[key].description,
+export const TrackTypeArray = Object.keys(TrackTypeObj);
+export const TrackTypeSelection = TrackTypeArray.map((key) => ({
+    label: TrackTypeObj[key].label,
+    description: TrackTypeObj[key].description,
     value: key,
 }));

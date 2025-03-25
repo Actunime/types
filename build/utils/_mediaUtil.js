@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.dateToZod = exports.dateTimeToZod = exports.MediaGenresSelection = exports.MediaGenresArray = exports.MediaGenresObj = exports.MediaParentLabelSelection = exports.MediaParentLabelArray = exports.MediaParentLabelObj = exports.MediaStatusSelection = exports.MediaStatusArray = exports.MediaStatusObj = exports.MediaSourceSelection = exports.MediaSourceArray = exports.MediaSourceObj = void 0;
-exports.MediaSourceObj = {
+export const MediaSourceObj = {
     ORIGINAL: {
         label: "Original",
         description: "A été créé de manière originale et ne se base sur aucune œuvre préexistante.",
@@ -43,49 +40,13 @@ exports.MediaSourceObj = {
         description: "Basé sur une autre série d'anime.",
     },
 };
-exports.MediaSourceArray = Object.keys(exports.MediaSourceObj);
-exports.MediaSourceSelection = exports.MediaSourceArray.map((key) => ({
-    label: exports.MediaSourceObj[key].label,
-    description: exports.MediaSourceObj[key].description,
+export const MediaSourceArray = Object.keys(MediaSourceObj);
+export const MediaSourceSelection = MediaSourceArray.map((key) => ({
+    label: MediaSourceObj[key].label,
+    description: MediaSourceObj[key].description,
     value: key,
 }));
-// export const MediaFormatObj = {
-//   SERIE: {
-//     label: "Série",
-//     description: "Diffusé en épisodes réguliers.",
-//   },
-//   FILM: {
-//     label: "Film",
-//     description: "Produit comme un long métrage.",
-//   },
-//   ONA: {
-//     label: "ONA",
-//     description: "Diffusé directement sur Internet.",
-//   },
-//   OVA: {
-//     label: "OVA",
-//     description: "Destiné à la vente directe aux consommateurs.",
-//   },
-//   SPECIAL: {
-//     label: "Spécial",
-//     description:
-//       "Un épisode unique ou une série d'épisodes qui ne fait pas partie de la diffusion régulière d'une série.",
-//   },
-//   TV_SHORT: {
-//     label: "TV Short",
-//     description:
-//       "Diffusé en épisodes courts, généralement moins de 15 minutes chacun.",
-//   },
-// };
-// export type IMediaFormat = keyof typeof MediaFormatObj;
-// export const MediaFormatArray = Object.keys(MediaFormatObj) as IMediaFormat[] &
-// [string, ...string[]];
-// export const MediaFormatSelection = MediaFormatArray.map((key) => ({
-//   label: MediaFormatObj[key].label,
-//   description: MediaFormatObj[key].description,
-//   value: key,
-// }));
-exports.MediaStatusObj = {
+export const MediaStatusObj = {
     AIRING: {
         label: "En cours",
         value: "AIRING",
@@ -122,13 +83,13 @@ exports.MediaStatusObj = {
         description: "Le statut de diffusion de l'anime est inconnu.",
     },
 };
-exports.MediaStatusArray = Object.keys(exports.MediaStatusObj);
-exports.MediaStatusSelection = exports.MediaStatusArray.map((key) => ({
-    label: exports.MediaStatusObj[key].label,
-    description: exports.MediaStatusObj[key].description,
+export const MediaStatusArray = Object.keys(MediaStatusObj);
+export const MediaStatusSelection = MediaStatusArray.map((key) => ({
+    label: MediaStatusObj[key].label,
+    description: MediaStatusObj[key].description,
     value: key,
 }));
-exports.MediaParentLabelObj = {
+export const MediaParentLabelObj = {
     SEQUEL: {
         label: "Suite directe",
         description: "C’est la continuation directe de l’histoire principale.",
@@ -150,13 +111,13 @@ exports.MediaParentLabelObj = {
         description: "Le film peut être une continuation de l’histoire, une histoire alternative, ou une récapitulation de la série avec des scènes supplémentaires.",
     },
 };
-exports.MediaParentLabelArray = Object.keys(exports.MediaParentLabelObj);
-exports.MediaParentLabelSelection = exports.MediaParentLabelArray.map((key) => ({
-    label: exports.MediaParentLabelObj[key].label,
-    description: exports.MediaParentLabelObj[key].description,
+export const MediaParentLabelArray = Object.keys(MediaParentLabelObj);
+export const MediaParentLabelSelection = MediaParentLabelArray.map((key) => ({
+    label: MediaParentLabelObj[key].label,
+    description: MediaParentLabelObj[key].description,
     value: key,
 }));
-exports.MediaGenresObj = {
+export const MediaGenresObj = {
     ACTION: {
         label: "Action",
         value: "ACTION",
@@ -288,13 +249,13 @@ exports.MediaGenresObj = {
         description: "",
     },
 };
-exports.MediaGenresArray = Object.keys(exports.MediaGenresObj);
-exports.MediaGenresSelection = exports.MediaGenresArray.map((key) => ({
-    label: exports.MediaGenresObj[key].label,
-    description: exports.MediaGenresObj[key].description,
+export const MediaGenresArray = Object.keys(MediaGenresObj);
+export const MediaGenresSelection = MediaGenresArray.map((key) => ({
+    label: MediaGenresObj[key].label,
+    description: MediaGenresObj[key].description,
     value: key,
 }));
-const dateTimeToZod = (date) => {
+export const dateTimeToZod = (date) => {
     if (!date)
         return undefined;
     if (typeof date === "string")
@@ -318,10 +279,8 @@ const dateTimeToZod = (date) => {
     }).format(date);
     const formated = `${formatedYear}-${formatedMonth}-${formatedDay}T${formatedTime}`;
     return formated;
-    // return date.toISOString().split(".")[0];
 };
-exports.dateTimeToZod = dateTimeToZod;
-const dateToZod = (date) => {
+export const dateToZod = (date) => {
     if (!date)
         return undefined;
     if (typeof date === "string")
@@ -341,4 +300,3 @@ const dateToZod = (date) => {
     const formated = `${formatedYear}-${formatedMonth}-${formatedDay}`;
     return formated;
 };
-exports.dateToZod = dateToZod;

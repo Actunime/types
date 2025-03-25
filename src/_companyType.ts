@@ -1,5 +1,5 @@
 import { IImageFull } from "./_imageType";
-import type { IDate, IMedia, IMediaDB, IMediaLink, IMediaName, IMediaRelation, IMediaTitle } from "./_mediaType";
+import type { IDate, IMedia, IMediaDB, IMediaLink, IMediaName, IMediaRelation } from "./_mediaType";
 import type { IPaginationResponse } from "./_paginationType";
 
 export interface ICompanyRoot {

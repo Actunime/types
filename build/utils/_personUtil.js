@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PersonRoleSelection = exports.PersonRoleArray = exports.PersonRoleObj = void 0;
-exports.PersonRoleObj = {
+export const PersonRoleObj = {
     DOUBLAGE_SEIYU: "Seiyū (Comédien de doublage)",
     AUTEUR: "Auteur de l'oeuvre",
     EDITEUR: "Éditeur",
@@ -44,8 +41,8 @@ exports.PersonRoleObj = {
     DESIGNER_SONORE: "Designer sonore",
     MIXEUR: "Mixeur",
 };
-exports.PersonRoleArray = Object.keys(exports.PersonRoleObj);
-exports.PersonRoleSelection = exports.PersonRoleArray.map((key) => ({
-    label: exports.PersonRoleObj[key],
+export const PersonRoleArray = Object.keys(PersonRoleObj);
+export const PersonRoleSelection = PersonRoleArray.map((key) => ({
+    label: PersonRoleObj[key],
     value: key,
 }));

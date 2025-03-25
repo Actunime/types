@@ -1,18 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ActivityActionSelection = exports.ActivityActionArray = exports.ActivityActionObj = exports.ActivityTypeSelection = exports.ActivityTypeArray = exports.ActivityTypeObj = void 0;
-exports.ActivityTypeObj = {
+export const ActivityTypeObj = {
     PUBLIC: "Public",
     MEMBER: "Membre",
     MODERATION: "Modération",
     SYSTEM: "Système",
 };
-exports.ActivityTypeArray = Object.keys(exports.ActivityTypeObj);
-exports.ActivityTypeSelection = exports.ActivityTypeArray.map((key) => ({
-    label: exports.ActivityTypeObj[key],
+export const ActivityTypeArray = Object.keys(ActivityTypeObj);
+export const ActivityTypeSelection = ActivityTypeArray.map((key) => ({
+    label: ActivityTypeObj[key],
     value: key,
 }));
-exports.ActivityActionObj = {
+export const ActivityActionObj = {
     ROLES_CHANGES: "Changement de rôles",
     PREMIUM_CHANGES: "Mise a jour du premium",
     DISABLE_MEMBER: "Désactivation d'un membre",
@@ -84,8 +81,8 @@ exports.ActivityActionObj = {
     SIGNUP: "Inscription",
     PROFILE_CHANGES: "Changement de profil",
 };
-exports.ActivityActionArray = Object.keys(exports.ActivityActionObj);
-exports.ActivityActionSelection = exports.ActivityActionArray.map((key) => ({
-    label: exports.ActivityActionObj[key],
+export const ActivityActionArray = Object.keys(ActivityActionObj);
+export const ActivityActionSelection = ActivityActionArray.map((key) => ({
+    label: ActivityActionObj[key],
     value: key,
 }));

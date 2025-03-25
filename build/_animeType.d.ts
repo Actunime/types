@@ -1,14 +1,14 @@
-import type { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaRelation, IMediaTitle, IMedia } from "./_mediaType";
-import type { IPaginationResponse } from "./_paginationType";
-import { IMediaGenres, IMediaSource, IMediaStatus } from "./utils/_mediaUtil";
-import { IAnimeFormat } from "./utils/_animeUtil";
-import { IPersonFull, IPersonRelation } from "./_personType";
-import { IGroupeFull } from "./_groupeType";
-import { IMangaFull, IMangaRelation } from "./_mangaType";
-import { ICompanyFull } from "./_companyType";
-import { ICharacterFull, ICharacterRelation } from "./_characterType";
-import { IImageFull } from "./_imageType";
-import { ITrackFull } from "./_trackType";
+import type { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaRelation, IMediaTitle, IMedia } from './_mediaType';
+import type { IPaginationResponse } from './_paginationType';
+import { IMediaGenres, IMediaSource, IMediaStatus } from './utils/_mediaUtil';
+import { IAnimeFormat } from './utils/_animeUtil';
+import { IPersonFull, IPersonRelation } from './_personType';
+import { IGroupeFull } from './_groupeType';
+import { IMangaFull, IMangaRelation } from './_mangaType';
+import { ICompanyFull } from './_companyType';
+import { ICharacterFull, ICharacterRelation } from './_characterType';
+import { IImageFull } from './_imageType';
+import { ITrackFull } from './_trackType';
 export interface IAnimeEpisode {
     airing?: number;
     nextAiringDate?: IDate;

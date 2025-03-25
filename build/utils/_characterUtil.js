@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CharacterSpeciesSelection = exports.CharacterSpeciesArray = exports.CharacterSpeciesObj = exports.CharacterGenderSelection = exports.CharacterGenderArray = exports.CharacterGenderObj = exports.CharacterRoleSelection = exports.CharacterRoleArray = exports.CharacterRoleObj = void 0;
-exports.CharacterRoleObj = {
+export const CharacterRoleObj = {
     PRINCIPAL: {
         label: "Principal",
         description: "Personnage principal de l'histoire.",
@@ -23,13 +20,13 @@ exports.CharacterRoleObj = {
         description: "Personnage qui apporte de l'aide et du soutien au personnage principal.",
     },
 };
-exports.CharacterRoleArray = Object.keys(exports.CharacterRoleObj);
-exports.CharacterRoleSelection = exports.CharacterRoleArray.map((key) => ({
-    label: exports.CharacterRoleObj[key].label,
-    description: exports.CharacterRoleObj[key].description,
+export const CharacterRoleArray = Object.keys(CharacterRoleObj);
+export const CharacterRoleSelection = CharacterRoleArray.map((key) => ({
+    label: CharacterRoleObj[key].label,
+    description: CharacterRoleObj[key].description,
     value: key,
 }));
-exports.CharacterGenderObj = {
+export const CharacterGenderObj = {
     MASCULIN: {
         label: "Masculin",
         description: "Personnage qui a une apparence physique traditionnellement associée à la masculinité.",
@@ -59,13 +56,13 @@ exports.CharacterGenderObj = {
         description: "Personnage qui ne se trouve pas dans la liste ci-dessus.",
     },
 };
-exports.CharacterGenderArray = Object.keys(exports.CharacterGenderObj);
-exports.CharacterGenderSelection = exports.CharacterGenderArray.map((key) => ({
-    label: exports.CharacterGenderObj[key].label,
-    description: exports.CharacterGenderObj[key].description,
+export const CharacterGenderArray = Object.keys(CharacterGenderObj);
+export const CharacterGenderSelection = CharacterGenderArray.map((key) => ({
+    label: CharacterGenderObj[key].label,
+    description: CharacterGenderObj[key].description,
     value: key,
 }));
-exports.CharacterSpeciesObj = {
+export const CharacterSpeciesObj = {
     HUMAIN: {
         label: "Humain",
         description: "Personnage qui a une apparence physique associée à un humain, avec des caractéristiques comme des yeux, des cheveux, une peau claire, des mains et des pieds humains, etc.",
@@ -95,9 +92,9 @@ exports.CharacterSpeciesObj = {
         description: "Personnage dont la catégorie ne correspond pas à celles proposées.",
     },
 };
-exports.CharacterSpeciesArray = Object.keys(exports.CharacterSpeciesObj);
-exports.CharacterSpeciesSelection = exports.CharacterSpeciesArray.map((key) => ({
-    label: exports.CharacterSpeciesObj[key].label,
-    description: exports.CharacterSpeciesObj[key].description,
+export const CharacterSpeciesArray = Object.keys(CharacterSpeciesObj);
+export const CharacterSpeciesSelection = CharacterSpeciesArray.map((key) => ({
+    label: CharacterSpeciesObj[key].label,
+    description: CharacterSpeciesObj[key].description,
     value: key,
 }));

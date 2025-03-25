@@ -1,25 +1,22 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PatchStatusSelection = exports.PatchStatusArray = exports.PatchStatusObj = exports.PatchTypeSelection = exports.PatchTypeArray = exports.PatchTypeObj = void 0;
-exports.PatchTypeObj = {
+export const PatchTypeObj = {
     CREATE: "Création",
     UPDATE: "Modification",
     DELETE: "Suppression",
     RESTORE: "Restauration",
 };
-exports.PatchTypeArray = Object.keys(exports.PatchTypeObj);
-exports.PatchTypeSelection = exports.PatchTypeArray.map((key) => ({
-    label: exports.PatchTypeObj[key],
+export const PatchTypeArray = Object.keys(PatchTypeObj);
+export const PatchTypeSelection = PatchTypeArray.map((key) => ({
+    label: PatchTypeObj[key],
     value: key,
 }));
-exports.PatchStatusObj = {
+export const PatchStatusObj = {
     PENDING: "En attente",
     PROGRESS: "En cours de vérification",
     ACCEPTED: "Accepté",
     REJECTED: "Refusé"
 };
-exports.PatchStatusArray = Object.keys(exports.PatchStatusObj);
-exports.PatchStatusSelection = exports.PatchStatusArray.map((key) => ({
-    label: exports.PatchStatusObj[key],
+export const PatchStatusArray = Object.keys(PatchStatusObj);
+export const PatchStatusSelection = PatchStatusArray.map((key) => ({
+    label: PatchStatusObj[key],
     value: key,
 }));

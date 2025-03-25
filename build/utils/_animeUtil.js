@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AnimeFormatSelection = exports.AnimeFormatArray = exports.AnimeFormatObj = void 0;
-exports.AnimeFormatObj = {
+export const AnimeFormatObj = {
     SERIE: { label: "Série", description: "Diffusé en épisodes réguliers." },
     SERIE_COURTE: {
         label: "Série courte",
@@ -18,9 +15,9 @@ exports.AnimeFormatObj = {
         description: "Un épisode unique ou une série d'épisodes qui ne fait pas partie de la diffusion régulière d'une série.",
     },
 };
-exports.AnimeFormatArray = Object.keys(exports.AnimeFormatObj);
-exports.AnimeFormatSelection = exports.AnimeFormatArray.map((key) => ({
-    label: exports.AnimeFormatObj[key].label,
-    description: exports.AnimeFormatObj[key].description,
+export const AnimeFormatArray = Object.keys(AnimeFormatObj);
+export const AnimeFormatSelection = AnimeFormatArray.map((key) => ({
+    label: AnimeFormatObj[key].label,
+    description: AnimeFormatObj[key].description,
     value: key,
 }));

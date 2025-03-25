@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MangaFormatSelection = exports.MangaFormatArray = exports.MangaFormatObj = void 0;
-exports.MangaFormatObj = {
+export const MangaFormatObj = {
     MANGA: {
         label: "Manga",
         description: "Manga japonais.",
@@ -39,9 +36,9 @@ exports.MangaFormatObj = {
         description: "Le type de source n'est pas disponible dans ceux proposées.",
     },
 };
-exports.MangaFormatArray = Object.keys(exports.MangaFormatObj);
-exports.MangaFormatSelection = exports.MangaFormatArray.map((key) => ({
-    label: exports.MangaFormatObj[key].label,
-    description: exports.MangaFormatObj[key].description,
+export const MangaFormatArray = Object.keys(MangaFormatObj);
+export const MangaFormatSelection = MangaFormatArray.map((key) => ({
+    label: MangaFormatObj[key].label,
+    description: MangaFormatObj[key].description,
     value: key,
 }));
