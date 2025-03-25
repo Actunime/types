@@ -1,3 +1,10 @@
+## [1.0.49](https://github.com/Actunime/types/compare/v1.0.48...v1.0.49) (2025-03-25)
+
+
+### Bug Fixes
+
+* user ([3516650](https://github.com/Actunime/types/commit/351665008372a264e04036a2dc6e604cbeff1ab4))
+
 ## [1.0.48](https://github.com/Actunime/types/compare/v1.0.47...v1.0.48) (2025-03-25)
 
 
