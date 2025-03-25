@@ -20,4 +20,3 @@ export const PatchStatusSelection = PatchStatusArray.map((key) => ({
     label: PatchStatusObj[key],
     value: key,
 }));
-//# sourceMappingURL=_patchUtil.js.map

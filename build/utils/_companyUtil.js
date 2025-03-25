@@ -7,4 +7,3 @@ export const CompanyTypeSelection = CompanyTypeArray.map((key) => ({
     label: CompanyTypeObj[key],
     value: key,
 }));
-//# sourceMappingURL=_companyUtil.js.map

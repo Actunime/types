@@ -42,4 +42,3 @@ export const MangaFormatSelection = MangaFormatArray.map((key) => ({
     description: MangaFormatObj[key].description,
     value: key,
 }));
-//# sourceMappingURL=_mangaUtil.js.map

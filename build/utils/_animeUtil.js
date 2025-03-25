@@ -21,4 +21,3 @@ export const AnimeFormatSelection = AnimeFormatArray.map((key) => ({
     description: AnimeFormatObj[key].description,
     value: key,
 }));
-//# sourceMappingURL=_animeUtil.js.map

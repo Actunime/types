@@ -17,4 +17,3 @@ export const TargetPathSelection = TargetPathArray.map((key) => ({
     label: TargetPathObj[key],
     value: key,
 }));
-//# sourceMappingURL=_global.js.map

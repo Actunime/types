@@ -46,4 +46,3 @@ export const PersonRoleSelection = PersonRoleArray.map((key) => ({
     label: PersonRoleObj[key],
     value: key,
 }));
-//# sourceMappingURL=_personUtil.js.map

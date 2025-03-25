@@ -60,4 +60,3 @@ export const UserAnimeListStatusSelection = UserAnimeListStatusArray.map((key) =
     label: UserAnimeListStatusObj[key].label,
     value: key,
 }));
-//# sourceMappingURL=_userUtil.js.map

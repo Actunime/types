@@ -9,4 +9,3 @@ export const ImageLabelSelection = ImageLabelArray.map((key) => ({
     label: ImageLabelObj[key],
     value: key,
 }));
-//# sourceMappingURL=_imageUtil.js.map
