@@ -1,3 +1,10 @@
+## [1.0.42](https://github.com/Actunime/types/compare/v1.0.41...v1.0.42) (2025-03-25)
+
+
+### Bug Fixes
+
+* types & package build² ([8907935](https://github.com/Actunime/types/commit/8907935c12411c54bf0e0d0ce89bf491453a68c4))
+
 ## [1.0.41](https://github.com/Actunime/types/compare/v1.0.40...v1.0.41) (2025-03-22)
 
 
