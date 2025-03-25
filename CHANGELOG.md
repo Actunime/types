@@ -1,3 +1,12 @@
+## [1.0.44](https://github.com/Actunime/types/compare/v1.0.43...v1.0.44) (2025-03-25)
+
+
+### Bug Fixes
+
+* package build² ([6444828](https://github.com/Actunime/types/commit/644482876f13c941bdcee2cd143676107dbd4283))
+* package build² ([60caeaf](https://github.com/Actunime/types/commit/60caeaf86cfb7b225cc3ecad6d6f2a5eb911cb50))
+* package build² ([0be56be](https://github.com/Actunime/types/commit/0be56beea099bb2f1ec3f6613d23fbf80fa4f184))
+
 ## [1.0.43](https://github.com/Actunime/types/compare/v1.0.42...v1.0.43) (2025-03-25)
 
 
