@@ -1,3 +1,11 @@
+## [1.0.45](https://github.com/Actunime/types/compare/v1.0.44...v1.0.45) (2025-03-25)
+
+
+### Bug Fixes
+
+* package build² sourceMap ([fb44b92](https://github.com/Actunime/types/commit/fb44b9280f15222ecf48490c7254700054304e7c))
+* package build² srouceMap ([5e6d04c](https://github.com/Actunime/types/commit/5e6d04c664639c749e9ed39e8be4d0eceff1ba5a))
+
 ## [1.0.44](https://github.com/Actunime/types/compare/v1.0.43...v1.0.44) (2025-03-25)
 
 
