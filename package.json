@@ -10,7 +10,7 @@
   "scripts": {
     "test": "exit 0",
     "prepare": "husky",
-    "watch": "tsc --watch",
+    "watch": "tsc -p tsconfig.build.json --watch",
     "dev": "tsx --inspect=9230 ./src/index.ts",
     "build": "tsc -p tsconfig.build.json"
   },

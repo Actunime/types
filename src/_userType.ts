@@ -1,7 +1,7 @@
-import { IPaginationResponse } from "./_paginationType";
-import { IUserAnimeListStatus, IUserRoles } from "./utils";
-import { IDate, IMediaDB, IMediaRelation } from "./_mediaType";
-import { IImageFull } from "./_imageType";
+import { IPaginationResponse } from './_paginationType';
+import { IUserRoles } from './utils';
+import { IMediaDB, IMediaRelation } from './_mediaType';
+import { IImageFull } from './_imageType';
 
 export interface IUserRoot {
   accountId: string;
@@ -11,8 +11,8 @@ export interface IUserRoot {
   roles: IUserRoles[];
   avatar?: IMediaRelation;
   banner?: IMediaRelation;
-  preferences?: IUserPreferences;
-  animes?: IUserAnimeListe[];
+  options?: IUserOptions;
+  // animes?: IUserAnimeListe[];
 }
 
 export type IUser = IUserRoot & { id: string };
@@ -23,22 +23,21 @@ export interface IUserFull extends IUser {
 export type IUserDB = IMediaDB & IUser;
 export type IUserPaginationResponse = IPaginationResponse<IUser>;
 
-export interface IUserPreferences {
-  displayUnverifiedMedia: boolean;
-  displayUnverifiedImage: boolean;
+export interface IUserOptions {
+  displayUnverified: boolean;
 }
 
-export interface IUserAnimeListe {
-  id: string;
-  episode?: number;
-  status: IUserAnimeListStatus;
-  score?: number;
-  note?: string;
-  favoris?: boolean;
-  rank?: number;
-  startedDate?: IDate;
-  completedDate?: IDate;
+// export interface IUserAnimeListe {
+//   id: string;
+//   episode?: number;
+//   status: IUserAnimeListStatus;
+//   score?: number;
+//   note?: string;
+//   favoris?: boolean;
+//   rank?: number;
+//   startedDate?: IDate;
+//   completedDate?: IDate;
 
-  createdAt?: Date;
-  updatedAt?: Date;
-}
+//   createdAt?: Date;
+//   updatedAt?: Date;
+// }
