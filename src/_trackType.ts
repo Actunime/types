@@ -1,11 +1,11 @@
-import { IDate, IMedia, IMediaDB, IMediaLink, IMediaRelation, IMediaTitle } from "./_mediaType";
+import { IDate, IMedia, IMediaDB, IMediaLink, IMediaName, IMediaRelation } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPersonFull, IPersonRelation } from "./_personType";
 import { ITrackType } from "./utils";
 
 export interface ITrackRoot {
   type: ITrackType;
-  name: IMediaTitle;
+  name: IMediaName;
   releaseDate?: IDate;
   description?: string;
   cover?: IMediaRelation;

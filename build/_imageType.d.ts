@@ -1,10 +1,8 @@
 import { IPaginationResponse } from "./_paginationType";
-import { IImageLabel, IMedia, IMediaDB, ITargetPath } from ".";
+import { IImageLabel, IMedia, IMediaDB, IMediaRelation, ITargetPath } from ".";
 export interface IImageRoot {
     label: IImageLabel;
-    target: {
-        id: string;
-    };
+    target: IMediaRelation;
     targetPath: ITargetPath;
 }
 export type IImage = IImageRoot & IMedia;
