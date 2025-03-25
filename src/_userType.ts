@@ -5,6 +5,8 @@ import { IImageFull } from './_imageType';
 
 export interface IUserRoot {
   accountId: string;
+  username: string;
+  roles: IUserRoles[];
   displayName: string;
   description?: string;
   avatar?: IMediaRelation;
@@ -15,8 +17,6 @@ export interface IUserRoot {
 
 export type IUser = IUserRoot & { id: string };
 export interface IUserFull extends IUser {
-  username: string;
-  roles: IUserRoles[];
   avatar?: IImageFull;
   banner?: IImageFull;
 }
