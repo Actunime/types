@@ -22,5 +22,5 @@ export interface IUserFull extends IUser {
 export type IUserDB = IMediaDB & IUser;
 export type IUserPaginationResponse = IPaginationResponse<IUser>;
 export interface IUserOptions {
-    displayUnverified: boolean;
+    displayUnverified?: boolean;
 }
