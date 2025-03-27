@@ -1,3 +1,10 @@
+## [1.0.51](https://github.com/Actunime/types/compare/v1.0.50...v1.0.51) (2025-03-27)
+
+
+### Bug Fixes
+
+* **keycloak:** add permission util ([39e327e](https://github.com/Actunime/types/commit/39e327edd807330cecf25ac3fc2eb00cd5adbcca))
+
 ## [1.0.50](https://github.com/Actunime/types/compare/v1.0.49...v1.0.50) (2025-03-25)
 
 
