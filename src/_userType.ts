@@ -1,12 +1,13 @@
 import { IPaginationResponse } from './_paginationType';
-import { IUserRoles } from './utils';
+import { IPermissions } from './utils';
 import { IMediaDB, IMediaRelation } from './_mediaType';
 import { IImageFull } from './_imageType';
 
 export interface IUserRoot {
   accountId: string;
   username: string;
-  roles: IUserRoles[];
+  // Roles synchronisé avec keycloak
+  permissions: IPermissions[];
   displayName: string;
   description?: string;
   avatar?: IMediaRelation;
