@@ -1,3 +1,10 @@
+## [1.0.52](https://github.com/Actunime/types/compare/v1.0.51...v1.0.52) (2025-03-27)
+
+
+### Bug Fixes
+
+* **user:** use new permissions type ([0f19b8a](https://github.com/Actunime/types/commit/0f19b8a909147c38b380ea0757579f98275457cb))
+
 ## [1.0.51](https://github.com/Actunime/types/compare/v1.0.50...v1.0.51) (2025-03-27)
 
 
