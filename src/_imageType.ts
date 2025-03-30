@@ -3,7 +3,7 @@ import { IImageLabel, IMedia, IMediaDB, IMediaRelation, ITargetPath } from ".";
 
 export interface IImageRoot {
   label: IImageLabel
-  target: IMediaRelation
+  target?: IMediaRelation
   targetPath: ITargetPath;
 }
 

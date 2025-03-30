@@ -2,7 +2,7 @@ import { IPaginationResponse } from "./_paginationType";
 import { IImageLabel, IMedia, IMediaDB, IMediaRelation, ITargetPath } from ".";
 export interface IImageRoot {
     label: IImageLabel;
-    target: IMediaRelation;
+    target?: IMediaRelation;
     targetPath: ITargetPath;
 }
 export type IImage = IImageRoot & IMedia;
