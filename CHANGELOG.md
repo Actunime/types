@@ -1,3 +1,10 @@
+## [1.0.53](https://github.com/Actunime/types/compare/v1.0.52...v1.0.53) (2025-03-29)
+
+
+### Bug Fixes
+
+* remove person role from character actors not needed ([7009aa8](https://github.com/Actunime/types/commit/7009aa86ccca653b00470da81a3f333e2abe8a74))
+
 ## [1.0.52](https://github.com/Actunime/types/compare/v1.0.51...v1.0.52) (2025-03-27)
 
 
