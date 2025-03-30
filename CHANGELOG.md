@@ -1,3 +1,10 @@
+## [1.0.54](https://github.com/Actunime/types/compare/v1.0.53...v1.0.54) (2025-03-30)
+
+
+### Bug Fixes
+
+* manga format required ([87a1634](https://github.com/Actunime/types/commit/87a1634ee4688110ed4ab3b26a927c6e4d160cf4))
+
 ## [1.0.53](https://github.com/Actunime/types/compare/v1.0.52...v1.0.53) (2025-03-29)
 
 
