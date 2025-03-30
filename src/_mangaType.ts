@@ -36,7 +36,7 @@ export interface IMangaRoot {
   date?: IMediaDate;
   synopsis?: string;
   source?: IMediaSource;
-  format?: IMangaFormat;
+  format: IMangaFormat;
   vf?: boolean;
   trailer?: string;
   genres?: IMediaGenres[];
