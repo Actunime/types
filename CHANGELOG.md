@@ -1,3 +1,10 @@
+## [1.0.56](https://github.com/Actunime/types/compare/v1.0.55...v1.0.56) (2025-04-05)
+
+
+### Bug Fixes
+
+* add api types ([4c87097](https://github.com/Actunime/types/commit/4c8709736b6cde85e3507c68f296e8f7d3c12cc6))
+
 ## [1.0.55](https://github.com/Actunime/types/compare/v1.0.54...v1.0.55) (2025-03-30)
 
 
