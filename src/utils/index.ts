@@ -12,3 +12,4 @@ export * from './_reportUtil';
 export * from './_trackUtil';
 export * from './_userUtil';
 export * from './_permissionUtil';
+export * from './_apiUtil';
