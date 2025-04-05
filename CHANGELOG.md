@@ -1,3 +1,10 @@
+## [1.0.55](https://github.com/Actunime/types/compare/v1.0.54...v1.0.55) (2025-03-30)
+
+
+### Bug Fixes
+
+* set image target optional ([e8415af](https://github.com/Actunime/types/commit/e8415aff060c64c40dbf104edbb5d3ddd5ef23e2))
+
 ## [1.0.54](https://github.com/Actunime/types/compare/v1.0.53...v1.0.54) (2025-03-30)
 
 
