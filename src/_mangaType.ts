@@ -1,9 +1,5 @@
-import { IMangaFormat } from "./utils/_mangaUtil";
-import {
-  IMediaGenres,
-  IMediaSource,
-  IMediaStatus,
-} from "./utils/_mediaUtil";
+import { IMangaFormat } from './utils/_mangaUtil';
+import { IMediaGenres, IMediaSource, IMediaStatus } from './utils/_mediaUtil';
 import {
   IDate,
   IMediaDB,
@@ -13,13 +9,13 @@ import {
   IMediaRelation,
   IMedia,
   IMediaTitleInput,
-} from "./_mediaType";
-import { IPaginationResponse } from "./_paginationType";
-import { IPersonFull, IPersonRelation } from "./_personType";
-import { IImageFull } from "./_imageType";
-import { ICharacterFull, ICharacterRelation } from "./_characterType";
-import { IGroupeFull } from "./_groupeType";
-import { ICompanyFull } from "./_companyType";
+} from './_mediaType';
+import { IPaginationResponse } from './_paginationType';
+import { IPersonFull, IPersonRelation } from './_personType';
+import { IImageFull } from './_imageType';
+import { ICharacterFull, ICharacterRelation } from './_characterType';
+import { IGroupeFull } from './_groupeType';
+import { ICompanyFull } from './_companyType';
 
 export interface IMangaChapterVolums {
   airing?: number;
