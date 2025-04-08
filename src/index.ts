@@ -15,3 +15,4 @@ export * from './_reportType';
 export * from './_trackType';
 export * from './_userType';
 export * from './_apiType';
+export * from './_globalSearch';
