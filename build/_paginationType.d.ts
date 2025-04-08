@@ -7,4 +7,5 @@ export interface IPaginationResponse<T> {
     results: T[];
     resultsLimit: number;
     resultsCount: number;
+    resultsTimestamp: number;
 }
