@@ -1,3 +1,10 @@
+## [1.0.64](https://github.com/Actunime/types/compare/v1.0.63...v1.0.64) (2025-04-08)
+
+
+### Bug Fixes
+
+* globalSearch index file ([c1f7d2b](https://github.com/Actunime/types/commit/c1f7d2b5e81d2e06f72e3b9f7d90fc6fbbb9ae0d))
+
 ## [1.0.63](https://github.com/Actunime/types/compare/v1.0.62...v1.0.63) (2025-04-08)
 
 
