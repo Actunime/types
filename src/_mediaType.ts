@@ -13,7 +13,7 @@ export interface IMediaDB {
 }
 
 export interface IMediaTitle {
-  default: string;
+  original: string;
   normal: string;
   alias?: string[];
 }

@@ -10,7 +10,7 @@ export interface IMediaDB {
     createdAt: Date | string;
 }
 export interface IMediaTitle {
-    default: string;
+    original: string;
     normal: string;
     alias?: string[];
 }
