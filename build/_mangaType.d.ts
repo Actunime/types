@@ -6,6 +6,7 @@ import { IPersonFull, IPersonRelation } from "./_personType";
 import { IImageFull } from "./_imageType";
 import { ICharacterFull, ICharacterRelation } from "./_characterType";
 import { IGroupeFull } from "./_groupeType";
+import { ICompanyFull } from "./_companyType";
 export interface IMangaChapterVolums {
     airing?: number;
     nextAiringDate?: IDate;
@@ -33,7 +34,7 @@ export interface IMangaRoot {
     links?: IMediaLink[];
     cover?: IMediaRelation;
     banner?: IMediaRelation;
-    mangas?: IMediaRelation[];
+    companys?: IMediaRelation[];
     staffs?: IPersonRelation[];
     characters?: ICharacterRelation[];
 }
@@ -47,6 +48,7 @@ export interface IMangaFull extends IManga {
     parent: IMangaRelation & IMangaFull;
     cover: IImageFull;
     banner: IImageFull;
+    companys: ICompanyFull[];
     staffs: (IPersonRelation & IPersonFull)[];
     characters: (ICharacterRelation & ICharacterFull)[];
 }
