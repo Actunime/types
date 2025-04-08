@@ -1,3 +1,10 @@
+## [1.0.57](https://github.com/Actunime/types/compare/v1.0.56...v1.0.57) (2025-04-08)
+
+
+### Bug Fixes
+
+* add normal name & title ([23af339](https://github.com/Actunime/types/commit/23af33962c78506906231503a82f3ec3fd19c1b5))
+
 ## [1.0.56](https://github.com/Actunime/types/compare/v1.0.55...v1.0.56) (2025-04-05)
 
 
