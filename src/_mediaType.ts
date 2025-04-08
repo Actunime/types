@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { Schema } from 'mongoose';
 
 export interface IMedia {
   id: string;
@@ -14,17 +14,18 @@ export interface IMediaDB {
 
 export interface IMediaTitle {
   default: string;
+  normal: string;
   alias?: string[];
 }
 export type IMediaName = IMediaTitle;
 
 export interface IDate {
-  year?: number,
-  month?: number,
-  day?: number,
-  hours?: number,
-  minutes?: number,
-  seconds?: number
+  year?: number;
+  month?: number;
+  day?: number;
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
 }
 
 export interface IMediaDate {
@@ -37,6 +38,6 @@ export interface IMediaLink {
   value: string;
 }
 
-export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
+export type IMediaDisplayVariant = 'LIST' | 'CARD' | 'DEFAULT';
 
-export type IMediaRelation = { id: string; }
+export type IMediaRelation = { id: string };

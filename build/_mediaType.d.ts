@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { Schema } from 'mongoose';
 export interface IMedia {
     id: string;
     isVerified: boolean;
@@ -11,6 +11,7 @@ export interface IMediaDB {
 }
 export interface IMediaTitle {
     default: string;
+    normal: string;
     alias?: string[];
 }
 export type IMediaName = IMediaTitle;
@@ -30,7 +31,7 @@ export interface IMediaLink {
     name: string;
     value: string;
 }
-export type IMediaDisplayVariant = "LIST" | "CARD" | "DEFAULT";
+export type IMediaDisplayVariant = 'LIST' | 'CARD' | 'DEFAULT';
 export type IMediaRelation = {
     id: string;
 };
