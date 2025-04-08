@@ -11,7 +11,7 @@ export interface IMediaDB {
 }
 export interface IMediaTitle {
     default: string;
-    normal: string;
+    normal?: string;
     alias?: string[];
 }
 export type IMediaName = IMediaTitle;
