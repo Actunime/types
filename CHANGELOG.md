@@ -1,3 +1,11 @@
+## [1.0.58](https://github.com/Actunime/types/compare/v1.0.57...v1.0.58) (2025-04-08)
+
+
+### Bug Fixes
+
+* add input type for media ([19d3a7e](https://github.com/Actunime/types/commit/19d3a7e448b5e625e29fb79a77389638361fb42e))
+* types mediatitle normal as optionnal ([f9db765](https://github.com/Actunime/types/commit/f9db765a35362e7173b2cbea8a261f0d50805da1))
+
 ## [1.0.57](https://github.com/Actunime/types/compare/v1.0.56...v1.0.57) (2025-04-08)
 
 
