@@ -1,3 +1,10 @@
+## [1.0.61](https://github.com/Actunime/types/compare/v1.0.60...v1.0.61) (2025-04-08)
+
+
+### Bug Fixes
+
+*  title&name default to original ([6efc9fb](https://github.com/Actunime/types/commit/6efc9fb055a4310d218fd5e4125d6e6a6562e0a6))
+
 ## [1.0.60](https://github.com/Actunime/types/compare/v1.0.59...v1.0.60) (2025-04-08)
 
 
