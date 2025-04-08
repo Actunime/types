@@ -1,3 +1,10 @@
+## [1.0.62](https://github.com/Actunime/types/compare/v1.0.61...v1.0.62) (2025-04-08)
+
+
+### Bug Fixes
+
+* implement GlobalSearch types ([40eed2c](https://github.com/Actunime/types/commit/40eed2cbb940ecaef2d7e31d325e89999ac31fe1))
+
 ## [1.0.61](https://github.com/Actunime/types/compare/v1.0.60...v1.0.61) (2025-04-08)
 
 
