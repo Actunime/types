@@ -55,7 +55,7 @@ export interface IMangaRoot {
 }
 
 export interface IMangaInputRoot extends Omit<IMangaRoot, 'title'> {
-  name: IMediaTitleInput;
+  title: IMediaTitleInput;
 }
 
 export type IMangaInput = IMangaInputRoot & IMedia;

@@ -38,7 +38,7 @@ export interface IMangaRoot {
     characters?: ICharacterRelation[];
 }
 export interface IMangaInputRoot extends Omit<IMangaRoot, 'title'> {
-    name: IMediaTitleInput;
+    title: IMediaTitleInput;
 }
 export type IMangaInput = IMangaInputRoot & IMedia;
 export type IManga = IMangaRoot & IMedia;
