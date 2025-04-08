@@ -1,3 +1,10 @@
+## [1.0.63](https://github.com/Actunime/types/compare/v1.0.62...v1.0.63) (2025-04-08)
+
+
+### Bug Fixes
+
+* add resultsTimestamp to pagination response ([0e7c761](https://github.com/Actunime/types/commit/0e7c761640f2869f90f6c9d76c492c922138fee1))
+
 ## [1.0.62](https://github.com/Actunime/types/compare/v1.0.61...v1.0.62) (2025-04-08)
 
 
