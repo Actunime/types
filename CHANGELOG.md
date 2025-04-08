@@ -1,3 +1,11 @@
+## [1.0.60](https://github.com/Actunime/types/compare/v1.0.59...v1.0.60) (2025-04-08)
+
+
+### Bug Fixes
+
+* err ([4f6bb89](https://github.com/Actunime/types/commit/4f6bb89d52192e15094af746c604773f0db4c44a))
+* err ([c5635da](https://github.com/Actunime/types/commit/c5635da8ff084322eba7e80b4a498fdc94b27d88))
+
 ## [1.0.59](https://github.com/Actunime/types/compare/v1.0.58...v1.0.59) (2025-04-08)
 
 
