@@ -11,10 +11,12 @@ export interface IMediaDB {
 }
 export interface IMediaTitle {
     default: string;
-    normal?: string;
+    normal: string;
     alias?: string[];
 }
 export type IMediaName = IMediaTitle;
+export type IMediaTitleInput = Omit<IMediaTitle, 'normal'>;
+export type IMediaNameInput = IMediaTitleInput;
 export interface IDate {
     year?: number;
     month?: number;

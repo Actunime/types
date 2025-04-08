@@ -1,10 +1,9 @@
 import { IMangaFormat } from "./utils/_mangaUtil";
 import { IMediaGenres, IMediaSource, IMediaStatus } from "./utils/_mediaUtil";
-import { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaTitle, IMediaRelation, IMedia } from "./_mediaType";
+import { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaTitle, IMediaRelation, IMedia, IMediaTitleInput } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPersonFull, IPersonRelation } from "./_personType";
 import { IImageFull } from "./_imageType";
-import { ICompanyFull } from "./_companyType";
 import { ICharacterFull, ICharacterRelation } from "./_characterType";
 import { IGroupeFull } from "./_groupeType";
 export interface IMangaChapterVolums {
@@ -34,17 +33,20 @@ export interface IMangaRoot {
     links?: IMediaLink[];
     cover?: IMediaRelation;
     banner?: IMediaRelation;
-    companys?: IMediaRelation[];
+    mangas?: IMediaRelation[];
     staffs?: IPersonRelation[];
     characters?: ICharacterRelation[];
 }
+export interface IMangaInputRoot extends Omit<IMangaRoot, 'title'> {
+    name: IMediaTitleInput;
+}
+export type IMangaInput = IMangaInputRoot & IMedia;
 export type IManga = IMangaRoot & IMedia;
 export interface IMangaFull extends IManga {
     groupe: IGroupeFull;
     parent: IMangaRelation & IMangaFull;
     cover: IImageFull;
     banner: IImageFull;
-    companys: ICompanyFull[];
     staffs: (IPersonRelation & IPersonFull)[];
     characters: (ICharacterRelation & ICharacterFull)[];
 }

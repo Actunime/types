@@ -1,4 +1,4 @@
-import { IDate, IMedia, IMediaDB, IMediaLink, IMediaName, IMediaRelation } from "./_mediaType";
+import { IDate, IMedia, IMediaDB, IMediaLink, IMediaName, IMediaNameInput, IMediaRelation } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPersonFull, IPersonRelation } from "./_personType";
 import { ITrackType } from "./utils";
@@ -11,6 +11,10 @@ export interface ITrackRoot {
     artists?: IPersonRelation[];
     links?: IMediaLink[];
 }
+export interface ITrackInputRoot extends Omit<ITrackRoot, 'name'> {
+    name: IMediaNameInput;
+}
+export type ITrackInput = ITrackInputRoot & IMedia;
 export type ITrack = ITrackRoot & IMedia;
 export interface ITrackFull extends ITrack {
     artists: (IPersonRelation & IPersonFull)[];

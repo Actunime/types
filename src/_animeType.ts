@@ -6,6 +6,7 @@ import type {
   IMediaRelation,
   IMediaTitle,
   IMedia,
+  IMediaTitleInput,
 } from './_mediaType';
 
 import type { IPaginationResponse } from './_paginationType';
@@ -53,6 +54,12 @@ export interface IAnimeRoot {
   characters?: ICharacterRelation[];
   tracks?: IMediaRelation[];
 }
+
+export interface IAnimeInputRoot extends Omit<IAnimeRoot, 'title'> {
+  title: IMediaTitleInput;
+}
+
+export type IAnimeInput = IAnimeInputRoot & IMedia;
 
 export type IAnime = IAnimeRoot & IMedia;
 export interface IAnimeFull extends IAnime {

@@ -1,4 +1,4 @@
-import type { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaRelation, IMediaTitle, IMedia } from './_mediaType';
+import type { IDate, IMediaDB, IMediaDate, IMediaLink, IMediaRelation, IMediaTitle, IMedia, IMediaTitleInput } from './_mediaType';
 import type { IPaginationResponse } from './_paginationType';
 import { IMediaGenres, IMediaSource, IMediaStatus } from './utils/_mediaUtil';
 import { IAnimeFormat } from './utils/_animeUtil';
@@ -42,6 +42,10 @@ export interface IAnimeRoot {
     characters?: ICharacterRelation[];
     tracks?: IMediaRelation[];
 }
+export interface IAnimeInputRoot extends Omit<IAnimeRoot, 'title'> {
+    title: IMediaTitleInput;
+}
+export type IAnimeInput = IAnimeInputRoot & IMedia;
 export type IAnime = IAnimeRoot & IMedia;
 export interface IAnimeFull extends IAnime {
     groupe: IGroupeFull;

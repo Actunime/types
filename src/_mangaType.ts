@@ -12,11 +12,11 @@ import {
   IMediaTitle,
   IMediaRelation,
   IMedia,
+  IMediaTitleInput,
 } from "./_mediaType";
 import { IPaginationResponse } from "./_paginationType";
 import { IPersonFull, IPersonRelation } from "./_personType";
 import { IImageFull } from "./_imageType";
-import { ICompanyFull } from "./_companyType";
 import { ICharacterFull, ICharacterRelation } from "./_characterType";
 import { IGroupeFull } from "./_groupeType";
 
@@ -49,10 +49,16 @@ export interface IMangaRoot {
   cover?: IMediaRelation;
   banner?: IMediaRelation;
 
-  companys?: IMediaRelation[];
+  mangas?: IMediaRelation[];
   staffs?: IPersonRelation[];
   characters?: ICharacterRelation[];
 }
+
+export interface IMangaInputRoot extends Omit<IMangaRoot, 'title'> {
+  name: IMediaTitleInput;
+}
+
+export type IMangaInput = IMangaInputRoot & IMedia;
 
 export type IManga = IMangaRoot & IMedia;
 export interface IMangaFull extends IManga {
@@ -60,7 +66,6 @@ export interface IMangaFull extends IManga {
   parent: IMangaRelation & IMangaFull;
   cover: IImageFull;
   banner: IImageFull;
-  companys: ICompanyFull[];
   staffs: (IPersonRelation & IPersonFull)[];
   characters: (ICharacterRelation & ICharacterFull)[];
 }
