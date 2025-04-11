@@ -1,4 +1,4 @@
-export * from './utils';
+export * from './utils/index';
 export * from './_activityType';
 export * from './_animeType';
 export * from './_characterType';
