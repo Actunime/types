@@ -17,7 +17,7 @@ export type ITargetPath = keyof typeof TargetPathObj;
 export declare const TargetPathArray: ITargetPath[] & [string, ...string[]];
 export declare const TargetPathSelection: {
     label: string;
-    value: "Groupe" | "Manga" | "Anime" | "Image" | "User" | "Person" | "Character" | "Track" | "Company" | "Patch" | "Activity" | "Report";
+    value: "Manga" | "Anime" | "Groupe" | "Image" | "User" | "Person" | "Character" | "Track" | "Company" | "Patch" | "Activity" | "Report";
 }[];
 export type ITargetPathType<T extends ITargetPath> = T extends "User" ? IUser : T extends "Groupe" ? IGroupe : T extends "Manga" ? IManga : T extends "Anime" ? IAnime : T extends "Character" ? ICharacter : T extends "Person" ? IPerson : T extends "Track" ? ITrack : T extends "Company" ? ICompany : T extends "Patch" ? IPatch : T extends "Activity" ? IActivity : T extends "Report" ? IReport : T extends "Image" ? IImage : any;
 export type ITargetPathTypeFull<T extends ITargetPath> = T extends "User" ? IUserFull : T extends "Groupe" ? IGroupeFull : T extends "Manga" ? IMangaFull : T extends "Anime" ? IAnimeFull : T extends "Character" ? ICharacterFull : T extends "Person" ? IPersonFull : T extends "Track" ? ITrackFull : T extends "Company" ? ICompanyFull : T extends "Patch" ? IPatchFull : T extends "Activity" ? IActivityFull : T extends "Report" ? IReportFull : T extends "Image" ? IImageFull : any;
