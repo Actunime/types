@@ -1,3 +1,10 @@
+## [1.0.67](https://github.com/Actunime/types/compare/v1.0.66...v1.0.67) (2025-04-11)
+
+
+### Bug Fixes
+
+* build ([d740f46](https://github.com/Actunime/types/commit/d740f467b7d812802529b0b06fe7bc079c69c713))
+
 ## [1.0.66](https://github.com/Actunime/types/compare/v1.0.65...v1.0.66) (2025-04-11)
 
 
