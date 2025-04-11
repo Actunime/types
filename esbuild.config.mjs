@@ -1,6 +1,5 @@
-import { NodeResolvePlugin } from '@esbuild-plugins/node-resolve'
-import { build } from 'esbuild'
-import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
+import { NodeResolvePlugin } from '@esbuild-plugins/node-resolve';
+import { build } from 'esbuild';
 
 build({
     entryPoints: ["./src/index.ts"],
@@ -11,7 +10,6 @@ build({
     platform: "node",
     target: ["node22.0"],
     plugins: [
-        NodeModulesPolyfillPlugin(),
         NodeResolvePlugin({
             extensions: ['.ts', '.js'],
             onResolved: (resolved) => {
