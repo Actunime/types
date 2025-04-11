@@ -1,3 +1,11 @@
+## [1.0.65](https://github.com/Actunime/types/compare/v1.0.64...v1.0.65) (2025-04-11)
+
+
+### Bug Fixes
+
+* dir import ([466f89c](https://github.com/Actunime/types/commit/466f89cec6549e6411950753bc2235c3d3b603d0))
+* dir import ([02042d2](https://github.com/Actunime/types/commit/02042d25924b36bc62a12467149deb7e43911086))
+
 ## [1.0.64](https://github.com/Actunime/types/compare/v1.0.63...v1.0.64) (2025-04-08)
 
 
